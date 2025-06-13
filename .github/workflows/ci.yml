@@ -14,10 +14,16 @@ jobs:
     # 检出代码
     - name: Checkout code
       uses: actions/checkout@v3
+      with:
+        submodules: false  # 禁用子模块检查
 
     # 运行 Robot Framework 测试
     - name: Run Robot Framework tests
-      run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
+      run: |
+        echo Current directory: %CD%
+        dir
+        copy "C:\RfGithub\HLK.robot" .
+        robot HLK.robot 2>&1 | tee output.log
       shell: cmd
 
     # 上传测试报告
@@ -27,6 +33,7 @@ jobs:
       with:
         name: test-results
         path: |
-          "C:\RfGithub\output.xml"
-          "C:\RfGithub\log.html"
-          "C:\RfGithub\report.html"  # 根据实际报告路径调整
+          output.xml
+          log.html
+          report.html
+          output.log
