@@ -1,4 +1,135 @@
-# *** Settings ***
+*** Settings ***
+Library    ${CURDIR}${/}01-keywords${/}CanoeSync.py
+Library    OperatingSystem
+Documentation    HLK Test Suite - CANoe Automated Tests
+Suite Setup       Log    -->Start CANoe Test Suite
+Suite Teardown    Log    -->Finish CANoe Test Suite
+Test Timeout      5 minutes
+
+*** Variables ***
+${BASE_DIR}           ${CURDIR}
+${CONFIG_PATH}        ${BASE_DIR}${/}02_canoe_tc${/}PythonBasic.cfg
+${TEST_MODULE_PATH}   ${BASE_DIR}${/}02_canoe_tc${/}TestEnvironments${/}Test Environment.tse
+${LOG_FILE}           ${BASE_DIR}${/}04_logs${/}test_output.log
+${TEST_TIMEOUT}       5 minutes
+
+*** Test Cases ***
+Execute CANoe Tests
+    [Documentation]    Main test case for CANoe automation
+    HLK Load Configuration    ${CONFIG_PATH}
+    Sleep    3s
+    HLK Reset CANoe Environment
+    Sleep    2s
+    HLK Load Test Modules     ${TEST_MODULE_PATH}
+    Sleep    1s
+    HLK Start Measurement
+    Sleep    5s
+    HLK Run Test Modules
+    Sleep    15s
+    HLK Verify Test Execution
+
+Execute Stop CANoe Measurement
+    [Documentation]    Stops CANoe measurement
+    Sleep    3s
+    HLK Stop Measurement
+    Log    Measurement stopped
+
+ExecuteClose Canoe Application
+    [Documentation]    Closes the CANoe application
+    Sleep    3s
+    HLK Close Canoe Appliaction
+    Log    CANoe application closed
+
+*** Keywords ***
+HLK Reset CANoe Environment
+    [Documentation]    Resets CANoe test environment
+    CanoeSync.reset_environment
+    Log    CANoe environment reset completed
+
+HLK Load Configuration
+    [Arguments]    ${cfg_path}
+    [Documentation]    Loads CANoe configuration file
+    CanoeSync.load_configuration    ${cfg_path}
+    Log    Loaded configuration: ${cfg_path}
+
+HLK Load Test Modules
+    [Arguments]    ${tse_path}
+    [Documentation]    Loads test modules into CANoe
+    CanoeSync.load_test_setup    ${tse_path}
+    Log    Test modules loaded: ${tse_path}
+
+HLK Start Measurement
+    [Documentation]    Starts CANoe measurement
+    CanoeSync.start_measurement
+    Log    Measurement started
+
+HLK Run Test Modules
+    [Documentation]    Executes all loaded test modules
+    CanoeSync.run_test_module
+    Log    Test modules execution started
+
+HLK Verify Test Execution
+    [Documentation]    Verifies test results
+    ${output}=    Get File    ${LOG_FILE}
+    Should Contain    ${output}    measurement started
+    Should Contain    ${output}    measurement stopped
+    Log    Test execution verified
+
+HLK Stop Measurement
+    [Documentation]    Stops CANoe measurement
+    CanoeSync.stop_measurement
+    Log    Measurement stopped
+
+HLK Close Canoe Appliaction
+    [Documentation]    Closes the CANoe application
+    CanoeSync.close_canoe
+    Log    CANoe application closed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # *** Settings ***
 # #Library    C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\01-keywords\CanoeSync.py
 # Library    ${BASE_DIR}/01-keywords/CanoeSync.py
 # Library    OperatingSystem
@@ -118,75 +249,3 @@
 # #     Sleep    2s
 
 
-
-
-*** Settings ***
-Library    ${CURDIR}${/}01-keywords${/}CanoeSync.py
-Library    OperatingSystem
-Documentation    HLK Test Suite - CANoe Automated Tests
-Suite Setup       Log    Starting CANoe Test Suite
-Suite Teardown    Run Keywords    HLK Stop Measurement
-...               AND              Log    Test Suite Completed
-Test Timeout      5 minutes
-
-*** Variables ***
-${BASE_DIR}           ${CURDIR}
-${CONFIG_PATH}        ${BASE_DIR}${/}02_canoe_tc${/}PythonBasic.cfg
-${TEST_MODULE_PATH}   ${BASE_DIR}${/}02_canoe_tc${/}TestEnvironments${/}Test Environment.tse
-${LOG_FILE}           ${BASE_DIR}${/}04_logs${/}test_output.log
-${TEST_TIMEOUT}       5 minutes
-
-*** Test Cases ***
-Execute CANoe Tests
-    [Documentation]    Main test case for CANoe automation
-    HLK Load Configuration    ${CONFIG_PATH}
-    Sleep    3s
-    HLK Reset CANoe Environment
-    Sleep    2s
-    HLK Load Test Modules     ${TEST_MODULE_PATH}
-    Sleep    1s
-    HLK Start Measurement
-    Sleep    5s
-    HLK Run Test Modules
-    Sleep    15s
-    HLK Verify Test Execution
-
-*** Keywords ***
-HLK Reset CANoe Environment
-    [Documentation]    Resets CANoe test environment
-    CanoeSync.reset_environment
-    Log    CANoe environment reset completed
-
-HLK Load Configuration
-    [Arguments]    ${cfg_path}
-    [Documentation]    Loads CANoe configuration file
-    CanoeSync.load_configuration    ${cfg_path}
-    Log    Loaded configuration: ${cfg_path}
-
-HLK Load Test Modules
-    [Arguments]    ${tse_path}
-    [Documentation]    Loads test modules into CANoe
-    CanoeSync.load_test_setup    ${tse_path}
-    Log    Test modules loaded: ${tse_path}
-
-HLK Start Measurement
-    [Documentation]    Starts CANoe measurement
-    CanoeSync.start_measurement
-    Log    Measurement started
-
-HLK Run Test Modules
-    [Documentation]    Executes all loaded test modules
-    CanoeSync.run_test_module
-    Log    Test modules execution started
-
-HLK Verify Test Execution
-    [Documentation]    Verifies test results
-    ${output}=    Get File    ${LOG_FILE}
-    Should Contain    ${output}    measurement started
-    Should Contain    ${output}    measurement stopped
-    Log    Test execution verified
-
-HLK Stop Measurement
-    [Documentation]    Stops CANoe measurement
-    CanoeSync.stop_measurement
-    Log    Measurement stopped
