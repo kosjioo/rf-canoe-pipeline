@@ -18,17 +18,40 @@ jobs:
         submodules: false  # 禁用子模块检查
 
     # 运行 Robot Framework 测试
+#    - name: Run Robot Framework tests
+ #     run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
+  #    shell: cmd
+      
     - name: Run Robot Framework tests
-      run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
+      run: |
+        echo Current directory: %CD%
+        dir
+        copy "C:\RfGithub\HLK.robot" .
+        robot HLK.robot > run.log 2>&1
+        dir
+        type run.log
       shell: cmd
 
+
+
     # 上传测试报告
+ #   - name: Upload test results
+  #    if: always()
+  #    uses: actions/upload-artifact@v4
+  #    with:
+  #      name: test-results
+   #     path: |
+   #       "C:\RfGithub\output.xml"
+   #       "C:\RfGithub\log.html"
+   #       "C:\RfGithub\report.html"
+          
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: |
-          "C:\RfGithub\output.xml"
-          "C:\RfGithub\log.html"
-          "C:\RfGithub\report.html"
+          output.xml
+          log.html
+          report.html
+          run.log
