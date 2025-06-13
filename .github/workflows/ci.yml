@@ -15,10 +15,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # 运行本地测试脚本
+    # 运行 Robot Framework 测试
     - name: Run Robot Framework tests
-      run: |
-        run_robot.bat  # 直接运行批处理文件
+      run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
+      shell: cmd
 
     # 上传测试报告
     - name: Upload test results
@@ -27,6 +27,6 @@ jobs:
       with:
         name: test-results
         path: |
-          04_logs/output.xml
-          04_logs/log.html
-          04_logs/report.html  # 根据实际报告路径调整
+          "C:\RfGithub\output.xml"
+          "C:\RfGithub\log.html"
+          "C:\RfGithub\report.html"  # 根据实际报告路径调整

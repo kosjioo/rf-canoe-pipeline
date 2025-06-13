@@ -1,7 +1,7 @@
 [NStatePersistence]
 Signature=VectorStatePersistence
 [VGlobalMeasurementIndex]
-mMeasurementIndex=64
+mMeasurementIndex=65
 [VTestConfigurationConfigData]
 PythonBasicTest_NextTestRun=3
 [VTestExecutable]

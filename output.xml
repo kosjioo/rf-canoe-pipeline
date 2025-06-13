@@ -1,108 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-06-13T11:21:53.754504" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-06-13T11:33:27.197317" rpa="false" schemaversion="5">
 <suite id="s1" name="HLK" source="C:\RfGithub\HLK.robot">
 <kw name="Log" owner="BuiltIn" type="SETUP">
-<msg time="2025-06-13T11:23:33.065696" level="INFO">Starting CANoe Test Suite</msg>
+<msg time="2025-06-13T11:33:40.467749" level="INFO">Starting CANoe Test Suite</msg>
 <arg>Starting CANoe Test Suite</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:23:33.064480" elapsed="0.001325"/>
+<status status="PASS" start="2025-06-13T11:33:40.467297" elapsed="0.000596"/>
 </kw>
 <test id="s1-t1" name="Execute CANoe Tests" line="140">
 <kw name="HLK Load Configuration">
 <kw name="load_configuration" owner="CanoeSync">
-<msg time="2025-06-13T11:23:40.504444" level="INFO">Opening:  C:\RfGithub\02_canoe_tc\PythonBasic.cfg</msg>
+<msg time="2025-06-13T11:33:43.919857" level="INFO">Configuration: C:\RfGithub\02_canoe_tc\PythonBasic.cfg is opened
+Opening:  C:\RfGithub\02_canoe_tc\PythonBasic.cfg
+Configuration: C:\RfGithub\02_canoe_tc\PythonBasic.cfg is opened</msg>
 <arg>${cfg_path}</arg>
 <doc>加载 CANoe 配置文件（.cfg 文件）</doc>
-<status status="PASS" start="2025-06-13T11:23:33.069504" elapsed="7.435090"/>
+<status status="PASS" start="2025-06-13T11:33:40.470522" elapsed="3.449414"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:23:40.506044" level="INFO">Loaded configuration: C:\RfGithub\02_canoe_tc\PythonBasic.cfg</msg>
+<msg time="2025-06-13T11:33:43.921080" level="INFO">Loaded configuration: C:\RfGithub\02_canoe_tc\PythonBasic.cfg</msg>
 <arg>Loaded configuration: ${cfg_path}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:23:40.504865" elapsed="0.001337"/>
+<status status="PASS" start="2025-06-13T11:33:43.920080" elapsed="0.001122"/>
 </kw>
 <arg>${CONFIG_PATH}</arg>
 <doc>Loads CANoe configuration file</doc>
-<status status="PASS" start="2025-06-13T11:23:33.068575" elapsed="7.437822"/>
+<status status="PASS" start="2025-06-13T11:33:40.469575" elapsed="3.451727"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-13T11:23:43.509029" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-06-13T11:33:46.923467" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-13T11:23:40.507132" elapsed="3.002312"/>
+<status status="PASS" start="2025-06-13T11:33:43.921870" elapsed="3.001885"/>
 </kw>
 <kw name="HLK Reset CANoe Environment">
 <kw name="reset_environment" owner="CanoeSync">
-<msg time="2025-06-13T11:23:43.560508" level="INFO">Configuration: C:\RfGithub\02_canoe_tc\PythonBasic.cfg is opened
-[INFO] All test environments removed.</msg>
+<msg time="2025-06-13T11:33:46.938643" level="INFO">[INFO] All test environments removed.</msg>
 <doc>重置 CANoe 测试环境（清除所有已加载的 .tse）</doc>
-<status status="PASS" start="2025-06-13T11:23:43.526443" elapsed="0.034251"/>
+<status status="PASS" start="2025-06-13T11:33:46.929582" elapsed="0.009138"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:23:43.562590" level="INFO">CANoe environment reset completed</msg>
+<msg time="2025-06-13T11:33:46.939641" level="INFO">CANoe environment reset completed</msg>
 <arg>CANoe environment reset completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:23:43.561131" elapsed="0.001667"/>
+<status status="PASS" start="2025-06-13T11:33:46.938885" elapsed="0.000978"/>
 </kw>
 <doc>Resets CANoe test environment</doc>
-<status status="PASS" start="2025-06-13T11:23:43.511719" elapsed="0.051318"/>
+<status status="PASS" start="2025-06-13T11:33:46.924655" elapsed="0.015418"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-13T11:23:45.566346" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-06-13T11:33:48.942342" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-13T11:23:43.564641" elapsed="2.002047"/>
+<status status="PASS" start="2025-06-13T11:33:46.940636" elapsed="2.002039"/>
 </kw>
 <kw name="HLK Load Test Modules">
 <kw name="load_test_setup" owner="CanoeSync">
-<msg time="2025-06-13T11:23:45.836989" level="INFO">TestSetup acquired: &lt;win32com.gen_py.CANoe 17.5 Type Library.ITestSetup instance at 0x2187593622992&gt;
+<msg time="2025-06-13T11:33:49.099958" level="INFO">TestSetup acquired: &lt;win32com.gen_py.CANoe 17.5 Type Library.ITestSetup instance at 0x2694252569744&gt;
 Loading test environment from: C:\RfGithub\02_canoe_tc\TestEnvironments\Test Environment.tse
 Test environment loaded successfully</msg>
 <arg>${tse_path}</arg>
 <doc>加载 CANoe 测试模块（Test Module，.tse 文件），用于配置测试环境</doc>
-<status status="PASS" start="2025-06-13T11:23:45.568481" elapsed="0.268580"/>
+<status status="PASS" start="2025-06-13T11:33:48.944256" elapsed="0.155903"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:23:45.838499" level="INFO">Test modules loaded: C:\RfGithub\02_canoe_tc\TestEnvironments\Test Environment.tse</msg>
+<msg time="2025-06-13T11:33:49.101952" level="INFO">Test modules loaded: C:\RfGithub\02_canoe_tc\TestEnvironments\Test Environment.tse</msg>
 <arg>Test modules loaded: ${tse_path}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:23:45.837205" elapsed="0.001545"/>
+<status status="PASS" start="2025-06-13T11:33:49.100633" elapsed="0.001636"/>
 </kw>
 <arg>${TEST_MODULE_PATH}</arg>
 <doc>Loads test modules into CANoe</doc>
-<status status="PASS" start="2025-06-13T11:23:45.567846" elapsed="0.271129"/>
+<status status="PASS" start="2025-06-13T11:33:48.943761" elapsed="0.158625"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-13T11:23:46.840639" level="INFO">Slept 1 second.</msg>
+<msg time="2025-06-13T11:33:50.103621" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-13T11:23:45.839559" elapsed="1.001426"/>
+<status status="PASS" start="2025-06-13T11:33:49.102666" elapsed="1.001336"/>
 </kw>
 <kw name="HLK Start Measurement">
 <kw name="start_measurement" owner="CanoeSync">
-<msg time="2025-06-13T11:23:50.876169" level="INFO">&lt; measurement init &gt;
+<msg time="2025-06-13T11:33:51.531967" level="INFO">&lt; measurement init &gt;
 &lt; measurement started &gt;</msg>
 <doc>启动 CANoe 测量</doc>
-<status status="PASS" start="2025-06-13T11:23:46.842787" elapsed="4.033636"/>
+<status status="PASS" start="2025-06-13T11:33:50.105562" elapsed="1.426508"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:23:50.878221" level="INFO">Measurement started</msg>
+<msg time="2025-06-13T11:33:51.533027" level="INFO">Measurement started</msg>
 <arg>Measurement started</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:23:50.876866" elapsed="0.001615"/>
+<status status="PASS" start="2025-06-13T11:33:51.532311" elapsed="0.000974"/>
 </kw>
 <doc>Starts CANoe measurement</doc>
-<status status="PASS" start="2025-06-13T11:23:46.842226" elapsed="4.036477"/>
+<status status="PASS" start="2025-06-13T11:33:50.104882" elapsed="1.428619"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-13T11:23:55.882147" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-06-13T11:33:56.536164" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-13T11:23:50.879335" elapsed="5.003202"/>
+<status status="PASS" start="2025-06-13T11:33:51.534337" elapsed="5.002285"/>
 </kw>
 <kw name="HLK Run Test Modules">
 <kw name="run_test_module" owner="CanoeSync">
-<msg time="2025-06-13T11:24:01.020984" level="INFO">&lt; MessageCycleTime  started &gt;
+<msg time="2025-06-13T11:34:02.986818" level="INFO">&lt; MessageCycleTime  started &gt;
 &lt; Display  started &gt;
 &lt; EngineTest1  started &gt;
 &lt; EngineTest2  started &gt;
@@ -112,89 +113,89 @@ Test environment loaded successfully</msg>
 &lt; EngineTest2  stopped &gt;
 &lt; EngineTest1  stopped &gt;
 &lt; MessageCycleTime  stopped &gt;</msg>
-<status status="PASS" start="2025-06-13T11:23:55.887378" elapsed="5.133857"/>
+<status status="PASS" start="2025-06-13T11:33:56.539023" elapsed="6.447952"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:24:01.022699" level="INFO">Test modules execution started</msg>
+<msg time="2025-06-13T11:34:02.988590" level="INFO">Test modules execution started</msg>
 <arg>Test modules execution started</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:24:01.021661" elapsed="0.001199"/>
+<status status="PASS" start="2025-06-13T11:34:02.987307" elapsed="0.001547"/>
 </kw>
 <doc>Executes all loaded test modules</doc>
-<status status="PASS" start="2025-06-13T11:23:55.886789" elapsed="5.136199"/>
+<status status="PASS" start="2025-06-13T11:33:56.538066" elapsed="6.451000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-13T11:24:16.025903" level="INFO">Slept 15 seconds.</msg>
+<msg time="2025-06-13T11:34:17.991613" level="INFO">Slept 15 seconds.</msg>
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-13T11:24:01.024050" elapsed="15.002716"/>
+<status status="PASS" start="2025-06-13T11:34:02.990005" elapsed="15.001813"/>
 </kw>
 <kw name="HLK Verify Test Execution">
 <kw name="Get File" owner="OperatingSystem">
-<msg time="2025-06-13T11:24:16.029896" level="INFO" html="true">Getting file '&lt;a href="file://C:\RfGithub\04_logs\test_output.log"&gt;C:\RfGithub\04_logs\test_output.log&lt;/a&gt;'.</msg>
-<msg time="2025-06-13T11:24:16.061385" level="INFO">${output} = Opening: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\02_canoe_tc\PythonBasic.cfg
+<msg time="2025-06-13T11:34:17.993332" level="INFO" html="true">Getting file '&lt;a href="file://C:\RfGithub\04_logs\test_output.log"&gt;C:\RfGithub\04_logs\test_output.log&lt;/a&gt;'.</msg>
+<msg time="2025-06-13T11:34:18.021337" level="INFO">${output} = Opening: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\02_canoe_tc\PythonBasic.cfg
 Loading test setup: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\02_canoe_tc\TestEnvironments\Te...</msg>
 <var>${output}</var>
 <arg>${LOG_FILE}</arg>
 <doc>Returns the contents of a specified file.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.028641" elapsed="0.032802"/>
+<status status="PASS" start="2025-06-13T11:34:17.992742" elapsed="0.028690"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${output}</arg>
 <arg>measurement started</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.061883" elapsed="0.001842"/>
+<status status="PASS" start="2025-06-13T11:34:18.021852" elapsed="0.001079"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${output}</arg>
 <arg>measurement stopped</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.064200" elapsed="0.000987"/>
+<status status="PASS" start="2025-06-13T11:34:18.023119" elapsed="0.000622"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:24:16.066545" level="INFO">Test execution verified</msg>
+<msg time="2025-06-13T11:34:18.024332" level="INFO">Test execution verified</msg>
 <arg>Test execution verified</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.065356" elapsed="0.001411"/>
+<status status="PASS" start="2025-06-13T11:34:18.023891" elapsed="0.001524"/>
 </kw>
 <doc>Verifies test results</doc>
-<status status="PASS" start="2025-06-13T11:24:16.027897" elapsed="0.039070"/>
+<status status="PASS" start="2025-06-13T11:34:17.992336" elapsed="0.033276"/>
 </kw>
 <doc>Main test case for CANoe automation</doc>
 <timeout value="5 minutes"/>
-<status status="PASS" start="2025-06-13T11:23:33.067049" elapsed="43.000799"/>
+<status status="PASS" start="2025-06-13T11:33:40.468293" elapsed="37.557944"/>
 </test>
 <kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
 <kw name="HLK Stop Measurement">
 <kw name="stop_measurement" owner="CanoeSync">
-<msg time="2025-06-13T11:24:16.577630" level="INFO">&lt; measurement stopped &gt;</msg>
+<msg time="2025-06-13T11:34:18.935163" level="INFO">&lt; measurement stopped &gt;</msg>
 <doc>停止 CANoe 测量</doc>
-<status status="PASS" start="2025-06-13T11:24:16.072230" elapsed="0.505594"/>
+<status status="PASS" start="2025-06-13T11:34:18.028769" elapsed="0.906516"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:24:16.578633" level="INFO">Measurement stopped</msg>
+<msg time="2025-06-13T11:34:18.935647" level="INFO">Measurement stopped</msg>
 <arg>Measurement stopped</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.578211" elapsed="0.000560"/>
+<status status="PASS" start="2025-06-13T11:34:18.935473" elapsed="0.000237"/>
 </kw>
 <doc>Stops CANoe measurement</doc>
-<status status="PASS" start="2025-06-13T11:24:16.070854" elapsed="0.508103"/>
+<status status="PASS" start="2025-06-13T11:34:18.028318" elapsed="0.907500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-06-13T11:24:16.579447" level="INFO">Test Suite Completed</msg>
+<msg time="2025-06-13T11:34:18.936376" level="INFO">Test Suite Completed</msg>
 <arg>Test Suite Completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.579308" elapsed="0.000272"/>
+<status status="PASS" start="2025-06-13T11:34:18.936139" elapsed="0.000355"/>
 </kw>
 <arg>HLK Stop Measurement</arg>
 <arg>AND</arg>
 <arg>Log</arg>
 <arg>Test Suite Completed</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-06-13T11:24:16.070211" elapsed="0.509458"/>
+<status status="PASS" start="2025-06-13T11:34:18.027733" elapsed="0.908926"/>
 </kw>
 <doc>HLK Test Suite - CANoe Automated Tests</doc>
-<status status="PASS" start="2025-06-13T11:21:53.755587" elapsed="142.824142"/>
+<status status="PASS" start="2025-06-13T11:33:27.198169" elapsed="51.738622"/>
 </suite>
 <statistics>
 <total>

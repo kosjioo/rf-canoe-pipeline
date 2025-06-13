@@ -1,0 +1,3614 @@
+[2025-06-13 03:25:26Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'Credentials': 'C:\RfGithub\actions-runner\.credentials'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'Runner': 'C:\RfGithub\actions-runner\.runner'
+[2025-06-13 03:25:26Z INFO Worker] Version: 2.325.0
+[2025-06-13 03:25:26Z INFO Worker] Commit: 71ed7cd46223bd5d61633445946813012b502d54
+[2025-06-13 03:25:26Z INFO Worker] Culture: zh-CN
+[2025-06-13 03:25:26Z INFO Worker] UI Culture: zh-CN
+[2025-06-13 03:25:26Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-06-13 03:25:26Z INFO ProcessChannel] Receiving message of length 19302, with hash '411da0e3e27355e225d721b95eb07fdf5c1cb7d1dcbd0836b1725126bc7273a2'
+[2025-06-13 03:25:26Z INFO Worker] Message received.
+[2025-06-13 03:25:26Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/ci.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 15,
+        "col": 13,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "70e6d205-c072-43a8-825c-808c91bdc5db",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 19,
+        "col": 13,
+        "lit": "Run Robot Framework tests"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 12,
+              "lit": "run_robot.bat  # 直接运行批处理文件\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "9210f8eb-3925-49ee-9543-b02c1f5cc57f",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/upload-artifact",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 24,
+        "col": 13,
+        "lit": "Upload test results"
+      },
+      "contextName": "__actions_upload-artifact",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 28,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 9,
+              "lit": "name"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 15,
+              "lit": "test-results"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 29,
+              "col": 9,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 29,
+              "col": 15,
+              "lit": "04_logs/output.xml\n04_logs/log.html\n04_logs/report.html  # 根据实际报告路径调整"
+            }
+          }
+        ]
+      },
+      "condition": "always()",
+      "id": "d0eefd30-0be9-4377-b7aa-f010be404b63",
+      "name": "__actions_upload-artifact"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "test"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "61f760ef-f192-495c-917e-8646aa6f4660.test.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "test"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "61f760ef-f192-495c-917e-8646aa6f4660",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "61f760ef-f192-495c-917e-8646aa6f4660",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "07e507d7-2a4a-5f80-a525-0b4606796f59",
+  "jobDisplayName": "test",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/42/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+        },
+        {
+          "k": "repository",
+          "v": "kosjioo/rf-canoe-pipeline"
+        },
+        {
+          "k": "repository_owner",
+          "v": "kosjioo"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "170295444"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/kosjioo/rf-canoe-pipeline.git"
+        },
+        {
+          "k": "run_id",
+          "v": "15625708637"
+        },
+        {
+          "k": "run_number",
+          "v": "5"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "170295444"
+        },
+        {
+          "k": "actor",
+          "v": "kosjioo"
+        },
+        {
+          "k": "workflow",
+          "v": "RF and CANoe CI with Self-Hosted Runner"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "97bfb20e9979d4b033f4845895aa5bf74366e592"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "iauto_Validation_Team@iauto.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "iauto_ValidationTeam"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "iauto_Validation_Team@iauto.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "iauto_ValidationTeam"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Simplify pipeline, remove dependency installation"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-06-13T11:24:53+08:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "0f2e34ae31d02e6c2797e049cb01fbfa72bce865"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/kosjioo/rf-canoe-pipeline/commit/ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/kosjioo/rf-canoe-pipeline/compare/97bfb20e9979...ae2b436f75b6"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "iauto_Validation_Team@iauto.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "iauto_ValidationTeam"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "iauto_Validation_Team@iauto.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "iauto_ValidationTeam"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Simplify pipeline, remove dependency installation"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-06-13T11:24:53+08:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "0f2e34ae31d02e6c2797e049cb01fbfa72bce865"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline/commit/ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "jiahui.a.li@outlook.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "kosjioo"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1749780739.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "DemoTest for CICD pipeline"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/kosjioo/rf-canoe-pipeline.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1001207198.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "HTML"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOO601ng"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/170295444?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "jiahui.a.li@outlook.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/kosjioo/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/kosjioo/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/kosjioo/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/kosjioo/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/kosjioo"
+                          },
+                          {
+                            "k": "id",
+                            "v": 170295444.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "kosjioo"
+                          },
+                          {
+                            "k": "name",
+                            "v": "kosjioo"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCiaAlA"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/kosjioo/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/kosjioo/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/kosjioo/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/kosjioo/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/kosjioo/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/kosjioo"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1749785116.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 127060.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:kosjioo/rf-canoe-pipeline.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-06-13T03:14:25Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/170295444?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/kosjioo/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/kosjioo/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/kosjioo/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/kosjioo/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kosjioo"
+                    },
+                    {
+                      "k": "id",
+                      "v": 170295444.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "kosjioo"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCiaAlA"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/kosjioo/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/kosjioo/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/kosjioo/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/kosjioo/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/kosjioo/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/kosjioo"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "kosjioo/rf-canoe-pipeline/.github/workflows/ci.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "ae2b436f75b6fe8eafbb00776de258e2f5caddac"
+        },
+        {
+          "k": "repository_id",
+          "v": "1001207198"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "kosjioo"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCiaAlA"
+}
+[2025-06-13 03:25:26Z INFO JobRunner] Job ID 07e507d7-2a4a-5f80-a525-0b4606796f59
+[2025-06-13 03:25:26Z INFO ConfigurationStore] currentAssemblyLocation: C:\RfGithub\actions-runner\bin\Runner.Worker.dll
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] binPath: C:\RfGithub\actions-runner\bin
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] RootFolder: C:\RfGithub\actions-runner
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'Runner': 'C:\RfGithub\actions-runner\.runner'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] ConfigFilePath: C:\RfGithub\actions-runner\.runner
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\RfGithub\actions-runner\.runner_migrated'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] MigratedConfigFilePath: C:\RfGithub\actions-runner\.runner_migrated
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'Credentials': 'C:\RfGithub\actions-runner\.credentials'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] CredFilePath: C:\RfGithub\actions-runner\.credentials
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\RfGithub\actions-runner\.credentials_migrated'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] MigratedCredFilePath: C:\RfGithub\actions-runner\.credentials_migrated
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'Service': 'C:\RfGithub\actions-runner\.service'
+[2025-06-13 03:25:26Z INFO ConfigurationStore] ServiceConfigFilePath: C:\RfGithub\actions-runner\.service
+[2025-06-13 03:25:26Z INFO ConfigurationStore] Read setting file: 397 chars
+[2025-06-13 03:25:26Z INFO JobRunner] Initializing launch client
+[2025-06-13 03:25:26Z INFO JobServerQueue] Initializing results client
+[2025-06-13 03:25:26Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-06-13 03:25:26Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-06-13 03:25:26Z INFO JobServerQueue] Start process web console line queue.
+[2025-06-13 03:25:26Z INFO JobServerQueue] Start process file upload queue.
+[2025-06-13 03:25:26Z INFO JobServerQueue] Start results file upload queue.
+[2025-06-13 03:25:26Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-13 03:25:26Z INFO JobServerQueue] Start process timeline update queue.
+[2025-06-13 03:25:26Z INFO ExecutionContext] Initializing Job context
+[2025-06-13 03:25:26Z INFO ExecutionContext] Initialize GitHub context
+[2025-06-13 03:25:26Z INFO ExecutionContext] Initialize Env context
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:26Z INFO JobRunner] Starting the job execution context.
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO JobRunner] Validating directory permissions for: 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Tools': 'C:\RfGithub\actions-runner\_work\_tool'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:26Z INFO JobRunner] Getting job extension.
+[2025-06-13 03:25:26Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'Credentials': 'C:\RfGithub\actions-runner\.credentials'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known config file 'SetupInfo': 'C:\RfGithub\actions-runner\.setup_info'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\RfGithub\actions-runner\_work\_PipelineMapping\kosjioo/rf-canoe-pipeline\PipelineFolder.json
+[2025-06-13 03:25:26Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO JobExtension] Downloading actions
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:26Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:26Z INFO Worker] Listening for cancel message from the channel.
+[2025-06-13 03:25:26Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-06-13 03:25:27Z INFO ResultServer] Successfully started websocket client.
+[2025-06-13 03:25:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2b77ced-280b-46f7-bb40-a112d73eaee8', success rate: 1/1.
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:27Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:27Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into C:\RfGithub\actions-runner\_work\_actions\_temp_3cf1d0f9-5671-4088-a6b0-53a53674e9ad\3b1ab3f1-9b5c-4984-b6ad-fe81cf03bdd0.zip.
+[2025-06-13 03:25:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2b77ced-280b-46f7-bb40-a112d73eaee8', success rate: 1/1.
+[2025-06-13 03:25:27Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-06-13 03:25:29Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: BB58:3C8F6C:FF4B:514CB:684B9A25 Http Status: OK
+[2025-06-13 03:25:29Z INFO ActionManager] Finished getting action repository.
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:29Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:29Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/upload-artifact/zipball/ea165f8d65b6e75b540449e92b4886f43607fa02' into C:\RfGithub\actions-runner\_work\_actions\_temp_c8efc663-1699-4249-b83b-61a625767bab\ab1821f7-47ee-4a0b-b960-edf49f7cfcaa.zip.
+[2025-06-13 03:25:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2b77ced-280b-46f7-bb40-a112d73eaee8', success rate: 1/1.
+[2025-06-13 03:25:32Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/upload-artifact/zipball/ea165f8d65b6e75b540449e92b4886f43607fa02 X-GitHub-Request-Id: E7CD:80FBF:102B7:517B6:684B9A27 Http Status: OK
+[2025-06-13 03:25:32Z INFO ActionManager] Finished getting action repository.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:32Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManager] Load action that reference repository from 'C:\RfGithub\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-13 03:25:32Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-13 03:25:32Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Ignore action property author.
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Upload a Build Artifact",
+  "description": "Upload a build artifact that can be used by subsequent workflow steps",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "name"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "artifact"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "if-no-files-found"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 14,
+          "lit": "warn"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 20,
+          "col": 3,
+          "lit": "retention-days"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "compression-level"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 36,
+          "col": 14,
+          "lit": "6"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 37,
+          "col": 3,
+          "lit": "overwrite"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 42,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 43,
+          "col": 3,
+          "lit": "include-hidden-files"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 47,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/upload/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:32Z INFO ActionManager] Action node.js file: dist/upload/index.js, no more preparation.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManager] Load action that reference repository from 'C:\RfGithub\actions-runner\_work\_actions\actions\upload-artifact\v4'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Ignore action property author.
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Upload a Build Artifact",
+  "description": "Upload a build artifact that can be used by subsequent workflow steps",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "name"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "artifact"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "if-no-files-found"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 14,
+          "lit": "warn"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 20,
+          "col": 3,
+          "lit": "retention-days"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "compression-level"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 36,
+          "col": 14,
+          "lit": "6"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 37,
+          "col": 3,
+          "lit": "overwrite"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 42,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 43,
+          "col": 3,
+          "lit": "include-hidden-files"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 47,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/upload/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-13 03:25:32Z INFO ActionManager] Action node.js file: dist/upload/index.js.
+[2025-06-13 03:25:32Z INFO ActionManager] Action post node.js file: N/A.
+[2025-06-13 03:25:32Z INFO JobExtension] Adding .
+[2025-06-13 03:25:32Z INFO JobExtension] Adding .
+[2025-06-13 03:25:32Z INFO JobExtension] Adding .
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO JobExtension] Total accessible running process: 319.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO JobExtension] Start checking service connectivity in background.
+[2025-06-13 03:25:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2b77ced-280b-46f7-bb40-a112d73eaee8', success rate: 1/1.
+[2025-06-13 03:25:32Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "e2b77ced-280b-46f7-bb40-a112d73eaee8",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 7,
+  "startTime": "2025-06-13T03:25:26.744737Z",
+  "finishTime": "2025-06-13T03:25:32.8443478Z"
+}.
+[2025-06-13 03:25:32Z INFO JobRunner] Total job steps: 3.
+[2025-06-13 03:25:32Z INFO JobRunner] Run all job steps.
+[2025-06-13 03:25:32Z INFO StepsRunner] Processing step: DisplayName='Checkout code'
+[2025-06-13 03:25:32Z INFO StepsRunner] Evaluating: success()
+[2025-06-13 03:25:32Z INFO StepsRunner] Result: true
+[2025-06-13 03:25:32Z INFO StepsRunner] Starting the step.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-13 03:25:32Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper] Process started with process id 17160, waiting for process exit.
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper] Finished process 17160 with exit code 0, and elapsed time 00:00:00.0654530.
+[2025-06-13 03:25:32Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManager] Load action that reference repository from 'C:\RfGithub\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:32Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-13 03:25:32Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-13 03:25:32Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-13 03:25:32Z INFO ExecutionContext] Reserve record order 5 to 8 for post job actions.
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:32Z INFO ExecutionContext] Write event payload to C:\RfGithub\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "kosjioo/rf-canoe-pipeline"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:32Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-06-13 03:25:32Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-13 03:25:32Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:32Z INFO HostContext] Well known directory 'Externals': 'C:\RfGithub\actions-runner\externals'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   File name: 'C:\RfGithub\actions-runner\externals\node20\bin\node.exe'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Arguments: '"C:\RfGithub\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:32Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:33Z INFO ProcessInvokerWrapper] Process started with process id 20880, waiting for process exit.
+[2025-06-13 03:25:33Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:25:33Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_e2b77ced-280b-46f7-bb40-a112d73eaee8.1
+[2025-06-13 03:25:33Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-13 03:25:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:33Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-06-13 03:25:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:35Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-06-13 03:25:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:42Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:42Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:42Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:52Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:52Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:52Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:55Z INFO JobServerQueue] Try to append 3 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 3/3.
+[2025-06-13 03:25:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:55Z INFO JobServerQueue] Try to append 2 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 2/2.
+[2025-06-13 03:25:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Finished process 20880 with exit code 0, and elapsed time 00:00:24.2137857.
+[2025-06-13 03:25:57Z INFO CreateStepSummaryCommand] Step Summary file (C:\RfGithub\actions-runner\_work\_temp\_runner_file_commands\step_summary_4e4dad9e-e0e7-4f44-95aa-0bdfbf52c5ee) is empty; skipping attachment upload
+[2025-06-13 03:25:57Z INFO StepsRunner] Step result: 
+[2025-06-13 03:25:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '70e6d205-c072-43a8-825c-808c91bdc5db', success rate: 1/1.
+[2025-06-13 03:25:57Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "70e6d205-c072-43a8-825c-808c91bdc5db",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 25,
+  "startTime": "2025-06-13T03:25:32.8594067Z",
+  "finishTime": "2025-06-13T03:25:57.2175523Z"
+}.
+[2025-06-13 03:25:57Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-13 03:25:57Z INFO StepsRunner] Current state: job state = ''
+[2025-06-13 03:25:57Z INFO StepsRunner] Processing step: DisplayName='Run Robot Framework tests'
+[2025-06-13 03:25:57Z INFO StepsRunner] Evaluating: success()
+[2025-06-13 03:25:57Z INFO StepsRunner] Result: true
+[2025-06-13 03:25:57Z INFO StepsRunner] Starting the step.
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-13 03:25:57Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Process started with process id 23144, waiting for process exit.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Finished process 23144 with exit code 0, and elapsed time 00:00:00.0200057.
+[2025-06-13 03:25:57Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:57Z INFO ExecutionContext] Write event payload to C:\RfGithub\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-13 03:25:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-13 03:25:57Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-13 03:25:57Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-13 03:25:57Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-13 03:25:57Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-13 03:25:57Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:57Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-06-13 03:25:57Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-06-13 03:25:57Z INFO ScriptHandler] Defaulting to powershell
+[2025-06-13 03:25:57Z INFO ScriptHandler] Which2: 'powershell'
+[2025-06-13 03:25:57Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\RfGithub\actions-runner\_work\_temp\c36030ac-9446-4ef1-9b9b-24e46da25eaa.ps1'"'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Process started with process id 3440, waiting for process exit.
+[2025-06-13 03:25:57Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:25:57Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_70e6d205-c072-43a8-825c-808c91bdc5db.1
+[2025-06-13 03:25:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9210f8eb-3925-49ee-9543-b02c1f5cc57f', success rate: 1/1.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Finished process 3440 with exit code 1, and elapsed time 00:00:00.4330194.
+[2025-06-13 03:25:57Z INFO CreateStepSummaryCommand] Step Summary file (C:\RfGithub\actions-runner\_work\_temp\_runner_file_commands\step_summary_2544ef4d-4129-41bd-9e07-a93c588a3645) is empty; skipping attachment upload
+[2025-06-13 03:25:57Z INFO StepsRunner] Step result: Failed
+[2025-06-13 03:25:57Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "9210f8eb-3925-49ee-9543-b02c1f5cc57f",
+  "stepContextName": "__run",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-13T03:25:57.2208051Z",
+  "finishTime": "2025-06-13T03:25:57.7210194Z"
+}.
+[2025-06-13 03:25:57Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-06-13 03:25:57Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-13 03:25:57Z INFO StepsRunner] Processing step: DisplayName='Upload test results'
+[2025-06-13 03:25:57Z INFO StepsRunner] Evaluating: always()
+[2025-06-13 03:25:57Z INFO StepsRunner] Result: true
+[2025-06-13 03:25:57Z INFO StepsRunner] Starting the step.
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-13 03:25:57Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Process started with process id 25012, waiting for process exit.
+[2025-06-13 03:25:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9210f8eb-3925-49ee-9543-b02c1f5cc57f', success rate: 1/1.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Finished process 25012 with exit code 0, and elapsed time 00:00:00.0223326.
+[2025-06-13 03:25:57Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:57Z INFO ActionManager] Load action that reference repository from 'C:\RfGithub\actions-runner\_work\_actions\actions\upload-artifact\v4'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Ignore action property author.
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Upload a Build Artifact",
+  "description": "Upload a build artifact that can be used by subsequent workflow steps",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "name"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "artifact"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 11,
+          "col": 3,
+          "lit": "if-no-files-found"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 14,
+          "lit": "warn"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 20,
+          "col": 3,
+          "lit": "retention-days"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "compression-level"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 36,
+          "col": 14,
+          "lit": "6"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 37,
+          "col": 3,
+          "lit": "overwrite"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 42,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 43,
+          "col": 3,
+          "lit": "include-hidden-files"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 47,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/upload/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:57Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-13 03:25:57Z INFO ActionManager] Action node.js file: dist/upload/index.js.
+[2025-06-13 03:25:57Z INFO ActionManager] Action post node.js file: N/A.
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:57Z INFO ExecutionContext] Write event payload to C:\RfGithub\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Input 'if-no-files-found': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 19,
+  "col": 14,
+  "lit": "warn"
+}
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Input 'retention-days': default value evaluate result: ""
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Input 'compression-level': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 36,
+  "col": 14,
+  "lit": "6"
+}
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Input 'overwrite': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 42,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:57Z INFO ActionManifestManager] Input 'include-hidden-files': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 47,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:57Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-13 03:25:57Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:57Z INFO HostContext] Well known directory 'Externals': 'C:\RfGithub\actions-runner\externals'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   File name: 'C:\RfGithub\actions-runner\externals\node20\bin\node.exe'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Arguments: '"C:\RfGithub\actions-runner\_work\_actions\actions\upload-artifact\v4\dist/upload/index.js"'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:57Z INFO ProcessInvokerWrapper] Process started with process id 3980, waiting for process exit.
+[2025-06-13 03:25:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd0eefd30-0be9-4377-b7aa-f010be404b63', success rate: 1/1.
+[2025-06-13 03:25:58Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-06-13 03:25:58Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] Finished process 3980 with exit code 0, and elapsed time 00:00:01.2006789.
+[2025-06-13 03:25:58Z INFO CreateStepSummaryCommand] Step Summary file (C:\RfGithub\actions-runner\_work\_temp\_runner_file_commands\step_summary_426252e9-d29e-4e46-825d-6d78322447ca) is empty; skipping attachment upload
+[2025-06-13 03:25:58Z INFO StepsRunner] Step result: 
+[2025-06-13 03:25:58Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/upload-artifact",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "d0eefd30-0be9-4377-b7aa-f010be404b63",
+  "stepContextName": "__actions_upload-artifact",
+  "hasPreStep": false,
+  "hasPostStep": false,
+  "result": "succeeded",
+  "errorMessages": [
+    "No files were found with the provided path: 04_logs/output.xml\n04_logs/log.html\n04_logs/report.html  # 根据实际报告路径调整. No artifacts will be uploaded."
+  ],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-06-13T03:25:57.7261267Z",
+  "finishTime": "2025-06-13T03:25:58.9871917Z"
+}.
+[2025-06-13 03:25:58Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-13 03:25:58Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-13 03:25:58Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-06-13 03:25:58Z INFO StepsRunner] Evaluating: always()
+[2025-06-13 03:25:58Z INFO StepsRunner] Result: true
+[2025-06-13 03:25:58Z INFO StepsRunner] Starting the step.
+[2025-06-13 03:25:58Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:58Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:58Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:58Z INFO StepsRunner] Which2: 'chcp'
+[2025-06-13 03:25:58Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] Process started with process id 24024, waiting for process exit.
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper] Finished process 24024 with exit code 0, and elapsed time 00:00:00.0115520.
+[2025-06-13 03:25:59Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:59Z INFO ActionManager] Load action that reference repository from 'C:\RfGithub\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-06-13 03:25:59Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-06-13 03:25:59Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-06-13 03:25:59Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:59Z INFO ExecutionContext] Write event payload to C:\RfGithub\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:25:59Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "kosjioo/rf-canoe-pipeline"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-06-13 03:25:59Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-06-13 03:25:59Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command error
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command group
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-06-13 03:25:59Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:25:59Z INFO HostContext] Well known directory 'Externals': 'C:\RfGithub\actions-runner\externals'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper] Starting process:
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   File name: 'C:\RfGithub\actions-runner\externals\node20\bin\node.exe'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Arguments: '"C:\RfGithub\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Working directory: 'C:\RfGithub\actions-runner\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-06-13 03:25:59Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-06-13 03:25:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd0eefd30-0be9-4377-b7aa-f010be404b63', success rate: 1/1.
+[2025-06-13 03:25:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9869d2ed-443c-4363-8a67-101cac9d8d02', success rate: 1/1.
+[2025-06-13 03:25:59Z INFO ProcessInvokerWrapper] Process started with process id 15964, waiting for process exit.
+[2025-06-13 03:25:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9869d2ed-443c-4363-8a67-101cac9d8d02', success rate: 1/1.
+[2025-06-13 03:25:59Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-06-13 03:25:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9869d2ed-443c-4363-8a67-101cac9d8d02', success rate: 1/1.
+[2025-06-13 03:25:59Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:25:59Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_9210f8eb-3925-49ee-9543-b02c1f5cc57f.1
+[2025-06-13 03:25:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9869d2ed-443c-4363-8a67-101cac9d8d02', success rate: 1/1.
+[2025-06-13 03:26:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9869d2ed-443c-4363-8a67-101cac9d8d02', success rate: 1/1.
+[2025-06-13 03:26:00Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:26:00Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_d0eefd30-0be9-4377-b7aa-f010be404b63.1
+[2025-06-13 03:26:01Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-06-13 03:26:02Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:26:02Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:26:02Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:26:05Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:26:05Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-06-13 03:26:05Z INFO ProcessInvokerWrapper] Finished process 15964 with exit code 0, and elapsed time 00:00:06.1099428.
+[2025-06-13 03:26:05Z INFO CreateStepSummaryCommand] Step Summary file (C:\RfGithub\actions-runner\_work\_temp\_runner_file_commands\step_summary_b6005692-8377-44ad-be99-bf51a80f4652) is empty; skipping attachment upload
+[2025-06-13 03:26:05Z INFO StepsRunner] Step result: 
+[2025-06-13 03:26:05Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "9869d2ed-443c-4363-8a67-101cac9d8d02",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 7,
+  "startTime": "2025-06-13T03:25:58.9878533Z",
+  "finishTime": "2025-06-13T03:26:05.1225553Z"
+}.
+[2025-06-13 03:26:05Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-06-13 03:26:05Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-06-13 03:26:05Z INFO JobRunner] Finalize job.
+[2025-06-13 03:26:05Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:26:05Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:26:05Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:26:05Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:26:05Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:26:05Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:26:05Z INFO JobExtension] Initialize Env context
+[2025-06-13 03:26:05Z INFO JobExtension] Initialize steps context
+[2025-06-13 03:26:05Z INFO JobExtension] Total accessible running process: 321.
+[2025-06-13 03:26:05Z INFO JobExtension] Inspecting process environment variables. PID: 2168 (svchost)
+[2025-06-13 03:26:05Z WARN JobExtension] Ignore exception during read process environment variables: 拒绝访问。
+[2025-06-13 03:26:05Z INFO JobExtension] Inspecting process environment variables. PID: 16592 (RuntimeBroker)
+[2025-06-13 03:26:05Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "1b37e032-11b5-440e-a163-91055e94ae5f",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-06-13T03:26:05.1256224Z",
+  "finishTime": "2025-06-13T03:26:05.1448208Z"
+}.
+[2025-06-13 03:26:05Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-06-13 03:26:05Z INFO JobRunner] Completing the job execution context.
+[2025-06-13 03:26:05Z INFO JobRunner] Shutting down the job server queue.
+[2025-06-13 03:26:05Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-06-13 03:26:06Z INFO JobServerQueue] All queue process task stopped.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9869d2ed-443c-4363-8a67-101cac9d8d02', success rate: 1/1.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1b37e032-11b5-440e-a163-91055e94ae5f', success rate: 1/1.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Web console line queue drained.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-06-13 03:26:06Z INFO JobServerQueue] File upload queue drained.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-13 03:26:06Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_9869d2ed-443c-4363-8a67-101cac9d8d02.1
+[2025-06-13 03:26:06Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:26:06Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_1b37e032-11b5-440e-a163-91055e94ae5f.1
+[2025-06-13 03:26:07Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-06-13 03:26:07Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\61f760ef-f192-495c-917e-8646aa6f4660_07e507d7-2a4a-5f80-a525-0b4606796f59.1
+[2025-06-13 03:26:08Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2025-06-13 03:26:08Z INFO JobServerQueue] Results upload queue drained.
+[2025-06-13 03:26:08Z INFO JobServerQueue] Timeline update queue drained.
+[2025-06-13 03:26:08Z INFO JobServerQueue] Disposing job server ...
+[2025-06-13 03:26:08Z INFO JobServerQueue] Disposing results server ...
+[2025-06-13 03:26:08Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-06-13 03:26:08Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\RfGithub\actions-runner\_work\_temp
+[2025-06-13 03:26:08Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:26:08Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:26:08Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:26:08Z INFO HostContext] Well known config file 'Telemetry': 'C:\RfGithub\actions-runner\_diag\.telemetry'
+[2025-06-13 03:26:08Z INFO JobRunner] Raising job completed against run service
+[2025-06-13 03:26:09Z INFO Worker] Job completed.
