@@ -18,19 +18,20 @@ jobs:
         submodules: false  # 禁用子模块检查
 
     # 运行 Robot Framework 测试
-#    - name: Run Robot Framework tests
- #     run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
-  #    shell: cmd
-      
     - name: Run Robot Framework tests
-      run: |
-        echo Current directory: %CD%
-        dir
-        copy "C:\RfGithub\HLK.robot" .
-        robot HLK.robot > run.log 2>&1
-        dir
-        type run.log
+      run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
       shell: cmd
+      
+      
+    # - name: Run Robot Framework tests
+    #   run: |
+    #     echo Current directory: %CD%
+    #     dir
+    #     copy "C:\RfGithub\HLK.robot" .
+    #     robot HLK.robot > run.log 2>&1
+    #     dir
+    #     type run.log
+    #   shell: cmd
 
 
 
