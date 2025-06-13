@@ -23,7 +23,7 @@ jobs:
         echo Current directory: %CD%
         dir
         copy "C:\RfGithub\HLK.robot" .
-        robot HLK.robot 2>&1 | tee output.log
+        robot HLK.robot
       shell: cmd
 
     # 上传测试报告
@@ -36,4 +36,3 @@ jobs:
           output.xml
           log.html
           report.html
-          output.log
