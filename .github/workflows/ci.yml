@@ -19,11 +19,7 @@ jobs:
 
     # 运行 Robot Framework 测试
     - name: Run Robot Framework tests
-      run: |
-        echo Current directory: %CD%
-        dir
-        copy "C:\RfGithub\HLK.robot" .
-        robot HLK.robot
+      run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
       shell: cmd
 
     # 上传测试报告
@@ -33,6 +29,6 @@ jobs:
       with:
         name: test-results
         path: |
-          output.xml
-          log.html
-          report.html
+          "C:\RfGithub\output.xml"
+          "C:\RfGithub\log.html"
+          "C:\RfGithub\report.html"
