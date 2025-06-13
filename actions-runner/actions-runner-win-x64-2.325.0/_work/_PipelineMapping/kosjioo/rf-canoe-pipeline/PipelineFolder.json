@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "kosjioo/rf-canoe-pipeline",
+  "pipelineDirectory": "rf-canoe-pipeline",
+  "workspaceDirectory": "rf-canoe-pipeline\\rf-canoe-pipeline",
+  "repositories": {
+    "kosjioo/rf-canoe-pipeline": {
+      "repositoryPath": "rf-canoe-pipeline\\rf-canoe-pipeline",
+      "lastRunOn": "06/13/2025 10:51:32 +08:00"
+    }
+  },
+  "lastRunOn": "06/13/2025 10:51:32 +08:00"
+}

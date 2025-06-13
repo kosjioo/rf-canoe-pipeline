@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "JIAHUILI",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/",
+  "gitHubUrl": "https://github.com/kosjioo/rf-canoe-pipeline",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
