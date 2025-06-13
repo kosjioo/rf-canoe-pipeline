@@ -1,0 +1,1411 @@
+[2025-06-13 03:58:51Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'Credentials': 'C:\RfGithub\actions-runner\.credentials'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'Runner': 'C:\RfGithub\actions-runner\.runner'
+[2025-06-13 03:58:51Z INFO Worker] Version: 2.325.0
+[2025-06-13 03:58:51Z INFO Worker] Commit: 71ed7cd46223bd5d61633445946813012b502d54
+[2025-06-13 03:58:51Z INFO Worker] Culture: zh-CN
+[2025-06-13 03:58:51Z INFO Worker] UI Culture: zh-CN
+[2025-06-13 03:58:51Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-06-13 03:58:51Z INFO ProcessChannel] Receiving message of length 19594, with hash '5e0854f1dc43c9cf5213ae60dde68a070f7960412457294a98c9168da2318ffb'
+[2025-06-13 03:58:51Z INFO Worker] Message received.
+[2025-06-13 03:58:51Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/ci.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 15,
+        "col": 13,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 18,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 9,
+              "lit": "submodules"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 21,
+              "lit": "false"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "fe668299-8868-4c1b-a1ae-a70e454e6761",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 21,
+        "col": 13,
+        "lit": "Run Robot Framework tests"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 22,
+              "col": 12,
+              "lit": "cmd.exe /c robot \"C:\\RfGithub\\HLK.robot\""
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 14,
+              "lit": "cmd"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "457c8cf0-480e-48a5-a4a6-36020eb40755",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/upload-artifact",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 26,
+        "col": 13,
+        "lit": "Upload test results"
+      },
+      "contextName": "__actions_upload-artifact",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 30,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 30,
+              "col": 9,
+              "lit": "name"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 30,
+              "col": 15,
+              "lit": "test-results"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 9,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 15,
+              "lit": "\"C:\\RfGithub\\output.xml\"\n\"C:\\RfGithub\\log.html\"\n\"C:\\RfGithub\\report.html\""
+            }
+          }
+        ]
+      },
+      "condition": "always()",
+      "id": "e8051953-f2b1-47d7-89fe-ecc7517feff0",
+      "name": "__actions_upload-artifact"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "test"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "924326ff-06e2-4ea4-b549-590c9362d9f7.test.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "test"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "924326ff-06e2-4ea4-b549-590c9362d9f7",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "924326ff-06e2-4ea4-b549-590c9362d9f7",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "d54d3455-1414-54ff-9864-60e44a1c9967",
+  "jobDisplayName": "test",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/59/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "5ffa2714a04d21224885f764be68c5d0caed02ca"
+        },
+        {
+          "k": "repository",
+          "v": "kosjioo/rf-canoe-pipeline"
+        },
+        {
+          "k": "repository_owner",
+          "v": "kosjioo"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "170295444"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/kosjioo/rf-canoe-pipeline.git"
+        },
+        {
+          "k": "run_id",
+          "v": "15626084685"
+        },
+        {
+          "k": "run_number",
+          "v": "10"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "170295444"
+        },
+        {
+          "k": "actor",
+          "v": "kosjioo"
+        },
+        {
+          "k": "workflow",
+          "v": "RF and CANoe CI with Self-Hosted Runner"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "5ffa2714a04d21224885f764be68c5d0caed02ca"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "7f6fa8b0085feddde25d20d14bb10ac9f6b3ef46"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "iauto_Validation_Team@iauto.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "iauto_ValidationTeam"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "iauto_Validation_Team@iauto.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "iauto_ValidationTeam"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "5ffa2714a04d21224885f764be68c5d0caed02ca"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update yml to run HLK.robot with absolute path 222"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-06-13T11:57:17+08:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "fd370e9452bba4966286087631ee967266da08d3"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/kosjioo/rf-canoe-pipeline/commit/5ffa2714a04d21224885f764be68c5d0caed02ca"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/kosjioo/rf-canoe-pipeline/compare/7f6fa8b0085f...5ffa2714a04d"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "iauto_Validation_Team@iauto.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "iauto_ValidationTeam"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "iauto_Validation_Team@iauto.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "iauto_ValidationTeam"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "5ffa2714a04d21224885f764be68c5d0caed02ca"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update yml to run HLK.robot with absolute path 222"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-06-13T11:57:17+08:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "fd370e9452bba4966286087631ee967266da08d3"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline/commit/5ffa2714a04d21224885f764be68c5d0caed02ca"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "jiahui.a.li@outlook.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "kosjioo"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1749780739.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "DemoTest for CICD pipeline"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/kosjioo/rf-canoe-pipeline.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1001207198.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "HTML"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOO601ng"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/170295444?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "jiahui.a.li@outlook.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/kosjioo/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/kosjioo/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/kosjioo/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/kosjioo/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/kosjioo"
+                          },
+                          {
+                            "k": "id",
+                            "v": 170295444.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "kosjioo"
+                          },
+                          {
+                            "k": "name",
+                            "v": "kosjioo"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCiaAlA"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/kosjioo/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/kosjioo/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/kosjioo/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/kosjioo/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/kosjioo/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/kosjioo"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1749787047.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 127060.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:kosjioo/rf-canoe-pipeline.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-06-13T03:51:53Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/kosjioo/rf-canoe-pipeline"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/170295444?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/kosjioo/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/kosjioo/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/kosjioo/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/kosjioo/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kosjioo"
+                    },
+                    {
+                      "k": "id",
+                      "v": 170295444.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "kosjioo"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCiaAlA"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/kosjioo/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/kosjioo/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/kosjioo/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/kosjioo/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/kosjioo/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/kosjioo"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "kosjioo/rf-canoe-pipeline/.github/workflows/ci.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "5ffa2714a04d21224885f764be68c5d0caed02ca"
+        },
+        {
+          "k": "repository_id",
+          "v": "1001207198"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "kosjioo"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCiaAlA"
+}
+[2025-06-13 03:58:51Z INFO JobRunner] Job ID d54d3455-1414-54ff-9864-60e44a1c9967
+[2025-06-13 03:58:51Z INFO ConfigurationStore] currentAssemblyLocation: C:\RfGithub\actions-runner\bin\Runner.Worker.dll
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] binPath: C:\RfGithub\actions-runner\bin
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] RootFolder: C:\RfGithub\actions-runner
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'Runner': 'C:\RfGithub\actions-runner\.runner'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] ConfigFilePath: C:\RfGithub\actions-runner\.runner
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\RfGithub\actions-runner\.runner_migrated'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] MigratedConfigFilePath: C:\RfGithub\actions-runner\.runner_migrated
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'Credentials': 'C:\RfGithub\actions-runner\.credentials'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] CredFilePath: C:\RfGithub\actions-runner\.credentials
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\RfGithub\actions-runner\.credentials_migrated'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] MigratedCredFilePath: C:\RfGithub\actions-runner\.credentials_migrated
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'Service': 'C:\RfGithub\actions-runner\.service'
+[2025-06-13 03:58:51Z INFO ConfigurationStore] ServiceConfigFilePath: C:\RfGithub\actions-runner\.service
+[2025-06-13 03:58:51Z INFO ConfigurationStore] Read setting file: 397 chars
+[2025-06-13 03:58:51Z INFO JobRunner] Initializing launch client
+[2025-06-13 03:58:51Z INFO JobServerQueue] Initializing results client
+[2025-06-13 03:58:51Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-06-13 03:58:51Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-06-13 03:58:51Z INFO JobServerQueue] Start process web console line queue.
+[2025-06-13 03:58:51Z INFO JobServerQueue] Start process file upload queue.
+[2025-06-13 03:58:51Z INFO JobServerQueue] Start results file upload queue.
+[2025-06-13 03:58:51Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-13 03:58:51Z INFO JobServerQueue] Start process timeline update queue.
+[2025-06-13 03:58:51Z INFO ExecutionContext] Initializing Job context
+[2025-06-13 03:58:51Z INFO ExecutionContext] Initialize GitHub context
+[2025-06-13 03:58:51Z INFO ExecutionContext] Initialize Env context
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:58:51Z INFO JobRunner] Starting the job execution context.
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO JobRunner] Validating directory permissions for: 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Tools': 'C:\RfGithub\actions-runner\_work\_tool'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Temp': 'C:\RfGithub\actions-runner\_work\_temp'
+[2025-06-13 03:58:51Z INFO JobRunner] Getting job extension.
+[2025-06-13 03:58:51Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'Credentials': 'C:\RfGithub\actions-runner\.credentials'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known config file 'SetupInfo': 'C:\RfGithub\actions-runner\.setup_info'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\RfGithub\actions-runner\_work\_PipelineMapping\kosjioo/rf-canoe-pipeline\PipelineFolder.json
+[2025-06-13 03:58:51Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO JobExtension] Downloading actions
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:51Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:58:51Z INFO Worker] Listening for cancel message from the channel.
+[2025-06-13 03:58:51Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-06-13 03:58:53Z INFO ResultServer] Successfully started websocket client.
+[2025-06-13 03:58:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fb170263-2bd4-47a2-ab12-cd0e5abaacab', success rate: 1/1.
+[2025-06-13 03:58:53Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Work': 'C:\RfGithub\actions-runner\_work'
+[2025-06-13 03:58:54Z INFO HostContext] Well known directory 'Actions': 'C:\RfGithub\actions-runner\_work\_actions'
+[2025-06-13 03:58:54Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into C:\RfGithub\actions-runner\_work\_actions\_temp_6e37b5ce-9f5c-44d9-acbe-d0a1b4e85859\edd68e0d-6e1c-478d-8be1-699828a5abae.zip.
+[2025-06-13 03:58:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fb170263-2bd4-47a2-ab12-cd0e5abaacab', success rate: 1/1.
+[2025-06-13 03:59:12Z INFO ProcessChannel] Receiving message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2025-06-13 03:59:12Z INFO Worker] Cancellation/Shutdown message received.
+[2025-06-13 03:59:12Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2025-06-13 03:59:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd54d3455-1414-54ff-9864-60e44a1c9967', success rate: 1/1.
+[2025-06-13 03:59:33Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: FBEB:314151:11600:56BCB:684BA1FC Http Status: OK
+[2025-06-13 03:59:33Z INFO ActionManager] Action download has been cancelled.
+[2025-06-13 03:59:33Z ERR  JobExtension] Caught cancellation exception from JobExtension Initialization: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryArchive(IExecutionContext executionContext, String downloadUrl, String downloadAuthToken, String archiveFile)
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionDownloadInfo downloadInfo)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2025-06-13 03:59:33Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "fb170263-2bd4-47a2-ab12-cd0e5abaacab",
+  "result": "canceled",
+  "errorMessages": [
+    "A task was canceled."
+  ],
+  "executionTimeInSeconds": 42,
+  "startTime": "2025-06-13T03:58:51.6747885Z",
+  "finishTime": "2025-06-13T03:59:33.4369152Z"
+}.
+[2025-06-13 03:59:33Z ERR  JobRunner] Job is cancelled during initialize.
+[2025-06-13 03:59:33Z ERR  JobRunner] Caught exception: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryArchive(IExecutionContext executionContext, String downloadUrl, String downloadAuthToken, String archiveFile)
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionDownloadInfo downloadInfo)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2025-06-13 03:59:33Z INFO JobRunner] Shutting down the job server queue.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-06-13 03:59:33Z INFO JobServerQueue] All queue process task stopped.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fb170263-2bd4-47a2-ab12-cd0e5abaacab', success rate: 1/1.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Web console line queue drained.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-06-13 03:59:33Z INFO JobServerQueue] File upload queue drained.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-06-13 03:59:33Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-06-13 03:59:33Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\924326ff-06e2-4ea4-b549-590c9362d9f7_fb170263-2bd4-47a2-ab12-cd0e5abaacab.1
+[2025-06-13 03:59:35Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-06-13 03:59:35Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\RfGithub\actions-runner\_diag\blocks\924326ff-06e2-4ea4-b549-590c9362d9f7_d54d3455-1414-54ff-9864-60e44a1c9967.1
+[2025-06-13 03:59:36Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-06-13 03:59:36Z INFO JobServerQueue] Results upload queue drained.
+[2025-06-13 03:59:36Z INFO JobServerQueue] Timeline update queue drained.
+[2025-06-13 03:59:36Z INFO JobServerQueue] Disposing job server ...
+[2025-06-13 03:59:36Z INFO JobServerQueue] Disposing results server ...
+[2025-06-13 03:59:36Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-06-13 03:59:36Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\RfGithub\actions-runner\_work\_temp
+[2025-06-13 03:59:36Z INFO HostContext] Well known directory 'Bin': 'C:\RfGithub\actions-runner\bin'
+[2025-06-13 03:59:36Z INFO HostContext] Well known directory 'Root': 'C:\RfGithub\actions-runner'
+[2025-06-13 03:59:36Z INFO HostContext] Well known directory 'Diag': 'C:\RfGithub\actions-runner\_diag'
+[2025-06-13 03:59:36Z INFO HostContext] Well known config file 'Telemetry': 'C:\RfGithub\actions-runner\_diag\.telemetry'
+[2025-06-13 03:59:36Z INFO JobRunner] Raising job completed against run service
