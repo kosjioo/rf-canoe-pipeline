@@ -23,16 +23,19 @@ jobs:
       shell: cmd
       
       
-    # - name: Run Robot Framework tests
-    #   run: |
-    #     echo Current directory: %CD%
-    #     dir
-    #     copy "C:\RfGithub\HLK.robot" .
-    #     robot HLK.robot > run.log 2>&1
-    #     dir
-    #     type run.log
-    #   shell: cmd
-
+    - name: Run Robot Framework tests
+      run: |
+        set TIMESTAMP=%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%_%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
+        set TIMESTAMP=%TIMESTAMP: =0%
+        mkdir run_%TIMESTAMP%
+        copy "C:\RfGithub\HLK.robot" run_%TIMESTAMP%
+        cd run_%TIMESTAMP%
+        robot HLK.robot > run.log 2>&1
+        cd ..
+        copy run_%TIMESTAMP%\output.xml .
+        copy run_%TIMESTAMP%\log.html .
+        copy run_%TIMESTAMP%\report.html .
+      shell: cmd
 
 
     # 上传测试报告
