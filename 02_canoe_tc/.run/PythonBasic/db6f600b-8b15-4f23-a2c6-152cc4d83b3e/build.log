@@ -1,0 +1,122 @@
+﻿08:12:50 # Erstellen von Test Unit 'EasyTest' gestartet...
+08:12:50 - Build Step #0: BuildPreparation (ArtefactID: -1)
+08:12:50 - ------------------------------------------------
+08:12:50 - ============================== Build Step #0 finished ==============================
+08:12:50 - Build Step #1: PreBuildEvent (ArtefactID: -1)
+08:12:50 - ---------------------------------------------
+08:12:50 - ============================== Build Step #1 finished ==============================
+08:12:50 - Build Step #2: BuildTestSequenceDiagramDependencyTree (ArtefactID: -1)
+08:12:50 - ----------------------------------------------------------------------
+08:12:50 - Nothing to do (no Test Sequence Diagram Files)
+08:12:50 - ============================== Build Step #2 finished ==============================
+08:12:50 - Build Step #3: TraceArtefactIds (ArtefactID: -1)
+08:12:50 - ------------------------------------------------
+08:12:50 - Artefact IDs:
+08:12:50 -   0 D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\EasyTest\Tests.vtt
+08:12:50 - ============================== Build Step #3 finished ==============================
+08:12:50 - Build Step #4: FuzzTestDetection (ArtefactID: -1)
+08:12:50 - -------------------------------------------------
+08:12:50 - ============================== Build Step #4 finished ==============================
+08:12:50 - Build Step #5: ValidateTestUnit (ArtefactID: -1)
+08:12:50 - ------------------------------------------------
+08:12:50 # Prüfe Konsistenz der Test Unit
+08:12:50 - ============================== Build Step #5 finished ==============================
+08:12:50 - Build Step #6: BuildParameterTypeLibs (ArtefactID: -1)
+08:12:50 - ------------------------------------------------------
+08:12:50 - Nothing to do (no C# documents and no .NET assemblies)
+08:12:50 - ============================== Build Step #6 finished ==============================
+08:12:50 - Build Step #7: BuildCaplTypeLibs (ArtefactID: -1)
+08:12:50 - -------------------------------------------------
+08:12:50 - Nothing to do (no C# documents and no .NET assemblies)
+08:12:50 - ============================== Build Step #7 finished ==============================
+08:12:50 - Build Step #8: BuildSysVarTypeLibs (ArtefactID: -1)
+08:12:50 - ---------------------------------------------------
+08:12:50 - Nothing to do (no C# documents and no .NET assemblies)
+08:12:50 - ============================== Build Step #8 finished ==============================
+08:12:50 - Build Step #9: BuildCoTypeLib (ArtefactID: -1)
+08:12:50 - ----------------------------------------------
+08:12:50 - Nothing to do (no C# documents and no .NET assemblies or no CO-Lib)
+08:12:50 - ============================== Build Step #9 finished ==============================
+08:12:50 - Build Step #10: ValidateTteFile (ArtefactID: 0)
+08:12:50 - -----------------------------------------------
+08:12:50 - There are currently more actual dependencies than stored in MAKE database. Adding new dependencies:
+08:12:50 - D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\a0igc8johviv=VP.vvarprop
+08:12:50 - 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\EasyTest\Tests.vtt' is outdated
+08:12:50 - Reason: Export Tables have changed
+08:12:50 # Kompiliere Datei 'Tests.vtt' in Test Unit 'EasyTest'
+08:12:50 # Kompilierung erfolgreich beendet (08:12:50) -- 0 Fehler, 0 Warnungen
+08:12:50 - ============================== Build Step #10 finished ==============================
+08:12:50 - Build Step #11: ConditionalBuildAbort (ArtefactID: -1)
+08:12:50 - ------------------------------------------------------
+08:12:50 - All Validation succeeded - continue build.
+08:12:50 - ============================== Build Step #11 finished ==============================
+08:12:50 - Build Step #12: CollectNavigationInfo (ArtefactID: 0)
+08:12:50 - -----------------------------------------------------
+08:12:50 - ============================== Build Step #12 finished ==============================
+08:12:50 - Build Step #13: CompileVtt2Vxtx (ArtefactID: 0)
+08:12:50 - -----------------------------------------------
+08:12:50 - There are currently more actual dependencies than stored in MAKE database. Adding new dependencies:
+08:12:50 - D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\EasyTest\Tests.vtt
+08:12:50 - D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\a0igc8johviv=VP.vvarprop
+08:12:50 - There are currently more actual dependencies than stored in MAKE database. Adding new dependencies:
+08:12:50 - D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\EasyTest\Tests.vtt
+08:12:50 - D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\a0igc8johviv=VP.vvarprop
+08:12:51 - 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__TsoBuildFiles_\Tests.vxtx' is outdated
+08:12:51 - Reason: System Environment has changed
+08:12:51 - 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__TsoBuildFiles_\Tests.vxtx.can' is outdated
+08:12:51 - Reason: System Environment has changed
+08:12:51 - 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__TsoBuildFiles_\Tests.vxtx' is outdated
+08:12:51 - Reason: Export Tables have changed
+08:12:51 - ============================== Build Step #13 finished ==============================
+08:12:51 - Build Step #14: CompileGeneratedCapl (ArtefactID: 0)
+08:12:51 - ----------------------------------------------------
+08:12:51 - 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__TsoBuildFiles_\Tests.vxtx.cbf' is outdated
+08:12:51 - Reason: System Environment has changed
+08:12:51 - BuildStepUtilities.CompileCaplFile: 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__TsoBuildFiles_\Tests.vxtx.can' --> 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__TsoBuildFiles_\Tests.vxtx.cbf'
+08:12:51 - Copied file 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\a0igc8johviv~3-0.' to 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\__ExpTbl_\Tests.vtt.export.xml'
+08:12:51 - Copied file 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\EasyTest\Tests.vtt' to 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\Tests.vtt'
+08:12:51 - ============================== Build Step #14 finished ==============================
+08:12:51 - Build Step #15: MoveCSharpXmlDocumentation (ArtefactID: -1)
+08:12:51 - -----------------------------------------------------------
+08:12:51 - MoveCSharpXmlDocumentation: Skipped because option is deactivated
+08:12:51 - ============================== Build Step #15 finished ==============================
+08:12:51 - Build Step #16: ExportTraceabilityMatrix (ArtefactID: -1)
+08:12:51 - ---------------------------------------------------------
+08:12:51 - ExportTraceabilityMatrix: Skipped because option is deactivated
+08:12:51 - ============================== Build Step #16 finished ==============================
+08:12:51 - Build Step #17: IncludeSources (ArtefactID: -1)
+08:12:51 - -----------------------------------------------
+08:12:51 - IncludeSources: Skipped because option is deactivated
+08:12:51 - ============================== Build Step #17 finished ==============================
+08:12:51 - Build Step #18: WriteSystemEnvironment (ArtefactID: -1)
+08:12:51 - -------------------------------------------------------
+08:12:51 - Copy merged Test System Variable file...
+08:12:51 - Copy <m1a2o2vbh27d-MTSV> to D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\TestSysVars.vsysvar
+08:12:51 - There are currently more actual dependencies than stored in MAKE database. Adding new dependencies:
+08:12:51 - D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\m1a2o2vbh27d-MTSV
+08:12:51 - 'D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\TestSysVars.vsysvar' is outdated
+08:12:51 - Reason: System Environment has changed
+08:12:51 - Add variant property file...
+08:12:51 - No variant properties - nothing to do
+08:12:51 - ============================== Build Step #18 finished ==============================
+08:12:51 - Build Step #19: WriteTUProperties (ArtefactID: -1)
+08:12:51 - --------------------------------------------------
+08:12:51 - ============================== Build Step #19 finished ==============================
+08:12:51 - Build Step #20: WriteTetEntries (ArtefactID: -1)
+08:12:51 - ------------------------------------------------
+08:12:51 - ============================== Build Step #20 finished ==============================
+08:12:51 - Build Step #21: FuzzTestNLRemove (ArtefactID: -1)
+08:12:51 - -------------------------------------------------
+08:12:51 - ============================== Build Step #21 finished ==============================
+08:12:51 - Build Step #22: WriteManifest (ArtefactID: -1)
+08:12:51 - ----------------------------------------------
+08:12:51 - Writing manifest D:\Demos\Demos_SVN\CANoe Sample Configurations\Programming\Python\CANoeConfig\TestConfiguration\obj_PythonBasic\bin_a0igc8johviv\EasyTest.vtumanifest
+08:12:51 - ============================== Build Step #22 finished ==============================
+08:12:51 - Build Step #27: RemoveOrphanedBuildArtfacts (ArtefactID: -1)
+08:12:51 - ------------------------------------------------------------
+08:12:51 - Removing orphaned build artefacts from the vtuexe's main folder...
+08:12:51 - Nothing to do.
+08:12:51 - ============================== Build Step #27 finished ==============================
+08:12:51 - Build Step #23: WriteMetainfo (ArtefactID: -1)
+08:12:51 - ----------------------------------------------
+08:12:51 - BUILD TIME excluding ZIP/UNZIP (hours:minutes:seconds:milliseconds): 00:00:01:074

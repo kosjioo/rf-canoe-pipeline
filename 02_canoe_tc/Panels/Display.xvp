@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Display">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 3">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">40, 13</Property>
+      <Property Name="Location">16, 8</Property>
+      <Property Name="Text">Engine</Property>
+      <Property Name="ForeColor">White</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 2">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">30, 13</Property>
+      <Property Name="Location">146, 8</Property>
+      <Property Name="Text">Light</Property>
+      <Property Name="ForeColor">White</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 1">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">33, 13</Property>
+      <Property Name="Location">48, 146</Property>
+      <Property Name="Text">r.p.m.</Property>
+      <Property Name="ForeColor">White</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl1" Children="Controls" ControlName="TextBoxControl1">
+      <Property Name="Name">TextBoxControl1</Property>
+      <Property Name="Size">40, 20</Property>
+      <Property Name="Location">43, 163</Property>
+      <Property Name="AlarmUpperTextColor">ControlText</Property>
+      <Property Name="BoxForeColor">White</Property>
+      <Property Name="ValueDecimalPlaces">0</Property>
+      <Property Name="AlarmLowerBkgColor">Salmon</Property>
+      <Property Name="BoxTextAlign">Center</Property>
+      <Property Name="TextBackColor">72, 74, 87</Property>
+      <Property Name="ValueDisplay">Decimal</Property>
+      <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+      <Property Name="AlarmLowerTextColor">ControlText</Property>
+      <Property Name="AlarmGeneralSettings">1;0;0;100</Property>
+      <Property Name="DisplayLabel">Hide</Property>
+      <Property Name="BoxBorderStyle">FixedSingle</Property>
+      <Property Name="BoxBackColor">72, 74, 87</Property>
+      <Property Name="TextForeColor">White</Property>
+      <Property Name="DescriptionSize">0, 0</Property>
+      <Property Name="SymbolConfiguration">4;2;easy;Engine;EngineState;EngineSpeed;0;easy;;-1</Property>
+      <Property Name="TabIndex">4</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.MeterControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="MeterControl1" ControlName="Meter 1">
+      <Property Name="Name">MeterControl1</Property>
+      <Property Name="Size">105, 91</Property>
+      <Property Name="Location">9, 80</Property>
+      <Property Name="ScaleMax">4</Property>
+      <Property Name="SweepAngleFrom">-120</Property>
+      <Property Name="SweepAngleTo">120</Property>
+      <Property Name="AlarmLowerLimit">0</Property>
+      <Property Name="AlarmUpperLimit">3</Property>
+      <Property Name="SymbolConfiguration">4;16;Engine;;;EngineSpeedDspMeter;2;;;-1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl2" ControlName="Picture Box 1">
+      <Property Name="Name">PictureBoxControl2</Property>
+      <Property Name="Size">105, 85</Property>
+      <Property Name="Location">9, 72</Property>
+      <Property Name="ImageFile">Bitmaps\EngineSpeed.png</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl3" ControlName="SwitchControl3">
+      <Property Name="Name">SwitchControl3</Property>
+      <Property Name="Size">46, 33</Property>
+      <Property Name="Location">227, 105</Property>
+      <Property Name="StateCnt">8</Property>
+      <Property Name="SwitchValues">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesRx">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesVT">1;8;0/Lower/0;1/Lower/1;2/Lower/2;3/Lower/3;4/Lower/4;5/Lower/5;6/Lower/6;7/Lower/7</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;8&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;RxValue&gt;2&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;2&lt;/TxValue&gt;&lt;RxValue&gt;3&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;3&lt;/TxValue&gt;&lt;RxValue&gt;4&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;4&lt;/TxValue&gt;&lt;RxValue&gt;5&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;5&lt;/TxValue&gt;&lt;RxValue&gt;6&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;6&lt;/TxValue&gt;&lt;RxValue&gt;7&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;7&lt;/TxValue&gt;</Property>
+      <Property Name="ImageFile">Bitmaps\VCarFlashingLightLeft.bmp</Property>
+      <Property Name="SymbolConfiguration">4;16;Lights;;;LightDisplay;1;;;-1</Property>
+      <Property Name="TabIndex">3</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="SwitchControl2">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">18, 46</Property>
+      <Property Name="Location">155, 90</Property>
+      <Property Name="StateCnt">8</Property>
+      <Property Name="SwitchValues">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesRx">1;8;0;1;2;3;4;5;6;7</Property>
+      <Property Name="SwitchValuesVT">1;8;0/Lower/0;1/Lower/1;2/Lower/2;3/Lower/3;4/Lower/4;5/Lower/5;6/Lower/6;7/Lower/7</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;8&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;&lt;RxValue&gt;2&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;2&lt;/TxValue&gt;&lt;RxValue&gt;3&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;3&lt;/TxValue&gt;&lt;RxValue&gt;4&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;4&lt;/TxValue&gt;&lt;RxValue&gt;5&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;5&lt;/TxValue&gt;&lt;RxValue&gt;6&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;6&lt;/TxValue&gt;&lt;RxValue&gt;7&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;7&lt;/TxValue&gt;</Property>
+      <Property Name="ImageFile">Bitmaps\VCarFlashingLightRight.bmp</Property>
+      <Property Name="SymbolConfiguration">4;16;Lights;;;LightDisplay;1;;;-1</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PictureBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="PictureBoxControl1" ControlName="PictureBoxControl1">
+      <Property Name="Name">PictureBoxControl1</Property>
+      <Property Name="Size">215, 162</Property>
+      <Property Name="Location">136, 22</Property>
+      <Property Name="ImageFile">Bitmaps\VCar.bmp</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="SwitchControl1">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">32, 34</Property>
+      <Property Name="Location">49, 36</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+      <Property Name="ImageFile">Bitmaps\DisplayCar.png</Property>
+      <Property Name="SymbolConfiguration">4;2;easy;Engine;EngineState;OnOff;0;easy;;-1</Property>
+      <Property Name="TabIndex">1</Property>
+      <Property Name="ReadOnlyControl">True</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.55.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="StaticTextControl1">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">40, 13</Property>
+      <Property Name="Location">46, 142</Property>
+      <Property Name="BackColor">Black</Property>
+      <Property Name="TextAlign">MiddleCenter</Property>
+      <Property Name="Text">r.p.m.</Property>
+      <Property Name="ForeColor">White</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">364, 198</Property>
+    <Property Name="BackColor">72, 74, 87</Property>
+  </Object>
+</Panel>

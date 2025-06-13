@@ -1,0 +1,7 @@
+[NStatePersistence]
+Signature=VectorStatePersistence
+[VGlobalMeasurementIndex]
+mMeasurementIndex=45
+[VTestExecutable]
+TestConfiguration_LastReportFile=Report_TestConfiguration.vtestreport
+TestConfiguration_LastReportTmpFile=rpt9d8.vtestreport

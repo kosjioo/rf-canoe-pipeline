@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FileSystemMetainfo>
+  <Files>
+    <File Name="build.log" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="build.log" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.4398450+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.4408430+01:00</LastWriteTime>
+    </File>
+    <File Name="EasyTest.vtumanifest" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="EasyTest.vtumanifest" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.3979400+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.4288712+01:00</LastWriteTime>
+    </File>
+    <File Name="Tests.vtt" Time="Montag, 15. Februar 2021 08:12:50">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="Tests.vtt" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:50.3652387+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:50.3652387+01:00</LastWriteTime>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Montag, 15. Februar 2021 08:12:33">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.3560335+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:33.1103310+01:00</LastWriteTime>
+    </File>
+    <File Name="[MakeInfo]" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="[MakeInfo]" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.4388471+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.4398450+01:00</LastWriteTime>
+    </File>
+    <File Name="Tests.vtt.export.xml" Time="Montag, 15. Februar 2021 08:12:50">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\Tests.vtt.export.xml" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:50.3652387+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:50.3652387+01:00</LastWriteTime>
+    </File>
+    <File Name="Tests.vxtx" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.0268016+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.0268016+01:00</LastWriteTime>
+    </File>
+    <File Name="Tests.vxtx.can" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx.can" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.2193363+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.2203341+01:00</LastWriteTime>
+    </File>
+    <File Name="Tests.vxtx.cbf" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.3121299+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.3161208+01:00</LastWriteTime>
+    </File>
+    <File Name="__CANoeReportFuntionsLib.cin" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\__CANoeReportFuntionsLib.cin" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.2412874+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.2422864+01:00</LastWriteTime>
+    </File>
+    <File Name="__CaplGeneratorLib.cin" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\__CaplGeneratorLib.cin" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.2293140+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.2303120+01:00</LastWriteTime>
+    </File>
+    <File Name="__VariablesLib.cin" Time="Montag, 15. Februar 2021 08:12:51">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\__VariablesLib.cin" /&gt;</SerializedBasedFileName>
+      <CreationTime>2021-02-15T08:12:51.2243252+01:00</CreationTime>
+      <LastWriteTime>2021-02-15T08:12:51.2253232+01:00</LastWriteTime>
+    </File>
+  </Files>
+</FileSystemMetainfo>

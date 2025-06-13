@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Tti3jk8hf_Tet_TtInit</name>
+  </caplfunction>
+  <testfixture>
+    <title>Test Fixture</title>
+    <preparation>
+      <title></title>
+      <caplfunction>
+        <name>Tti3jk8hf_Tet_Tf_Preparation0</name>
+      </caplfunction>
+    </preparation>
+    <testcase>
+      <title>LightTest</title>
+      <caplfunction>
+        <name>Tti3jk8hf_Tet_Tc0</name>
+      </caplfunction>
+    </testcase>
+    <testcase>
+      <title>EngineTest</title>
+      <caplfunction>
+        <name>Tti3jk8hf_Tet_Tc1</name>
+      </caplfunction>
+    </testcase>
+  </testfixture>
+  <testcase>
+    <title>DisplayTest</title>
+    <caplfunction>
+      <name>Tti3jk8hf_Tet_Tc2</name>
+    </caplfunction>
+  </testcase>
+</testtree>

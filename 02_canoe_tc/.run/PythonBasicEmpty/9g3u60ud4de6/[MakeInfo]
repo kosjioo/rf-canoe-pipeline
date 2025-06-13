@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeInfo>
+  <EnvironmentHash>158912245887878366</EnvironmentHash>
+  <ExportTableHash>10283736750134715008</ExportTableHash>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <Files>
+    <File Name="a0igc8johviv=VP.vvarprop" Time="Montag, 15. Februar 2021 08:12:33" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\a0igc8johviv=VP.vvarprop" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2021-02-15T08:12:33.5532955+01:00</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="Tests.vtt" Time="Dienstag, 10. Dezember 2019 11:18:33" DependentOn="a0igc8johviv=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\EasyTest\Tests.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2019-12-10T11:18:33.4039689+01:00</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="a0igc8johviv=VP.vvarprop" Time="Montag, 15. Februar 2021 08:12:33">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\a0igc8johviv=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2021-02-15T08:12:33.5532955+01:00</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Tests.vxtx" Time="Montag, 15. Februar 2021 08:12:51" DependentOn="Tests.vtt, a0igc8johviv=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2021-02-15T08:12:51.0268016+01:00</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="Tests.vtt" Time="Dienstag, 10. Dezember 2019 11:18:33">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\EasyTest\Tests.vtt" /&gt;</File>
+          <LastWriteTime>2019-12-10T11:18:33.4039689+01:00</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="a0igc8johviv=VP.vvarprop" Time="Montag, 15. Februar 2021 08:12:33">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\a0igc8johviv=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2021-02-15T08:12:33.5532955+01:00</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Tests.vxtx.can" Time="Montag, 15. Februar 2021 08:12:51" DependentOn="Tests.vtt, a0igc8johviv=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2021-02-15T08:12:51.2203341+01:00</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="Tests.vtt" Time="Dienstag, 10. Dezember 2019 11:18:33">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\EasyTest\Tests.vtt" /&gt;</File>
+          <LastWriteTime>2019-12-10T11:18:33.4039689+01:00</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="a0igc8johviv=VP.vvarprop" Time="Montag, 15. Februar 2021 08:12:33">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\a0igc8johviv=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2021-02-15T08:12:33.5532955+01:00</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Tests.vxtx.cbf" Time="Montag, 15. Februar 2021 08:12:51" DependentOn="Tests.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2021-02-15T08:12:51.3161208+01:00</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="Tests.vxtx.can" Time="Montag, 15. Februar 2021 08:12:51">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Tests.vxtx.can" /&gt;</File>
+          <LastWriteTime>2021-02-15T08:12:51.2203341+01:00</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Montag, 15. Februar 2021 08:12:33" DependentOn="m1a2o2vbh27d-MTSV">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2021-02-15T08:12:33.1103310+01:00</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="m1a2o2vbh27d-MTSV" Time="Montag, 15. Februar 2021 08:12:33">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\m1a2o2vbh27d-MTSV" /&gt;</File>
+          <LastWriteTime>2021-02-15T08:12:33.1103310+01:00</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="m1a2o2vbh27d-MTSV" Time="Montag, 15. Februar 2021 08:12:33" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\m1a2o2vbh27d-MTSV" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2021-02-15T08:12:33.1103310+01:00</LastWriteTime>
+      <Dependencies />
+    </File>
+  </Files>
+</MakeInfo>

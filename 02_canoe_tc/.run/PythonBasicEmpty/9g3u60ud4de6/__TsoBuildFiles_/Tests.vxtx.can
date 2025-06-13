@@ -1,0 +1,325 @@
+﻿/* !Encoding: 65001  */
+includes
+{
+  #include "__VariablesLib.cin"
+  #include "__CaplGeneratorLib.cin"
+  #include "__CANoeReportFuntionsLib.cin"
+}
+
+variables
+{
+  // Global variables defined within this CAPL file
+  TestCheck __tc0;
+  TestCheck __tc1;
+}
+
+void Tti3jk8hf_Tet_TtInit()
+{
+
+}
+
+void Tti3jk8hf_Tet_Tf_Preparation0()
+{
+  TestPreparationBegin();
+  {
+    __SetBusContext("easy", __eSaveCurrent);
+    if(__BusContextOk())
+      __tc0 = TestCheck::CreateNodeMsgsRelCycleTimeViolation(`easy::dbNode::`Engine, 0.8, 1.2);
+    if (__tc0.QueryValid() > 0)
+    {
+      __tc0.SetTitle("");
+      TestAddCondition(__tc0);
+      __tc0.Start(__cEmpty);
+    }
+    __ResetBusContext();
+
+
+    __SetBusContext("easy", __eSaveCurrent);
+    if(__BusContextOk())
+      __tc1 = TestCheck::CreateNodeMsgsRelCycleTimeViolation(`easy::dbNode::`Light, 0.8, 1.2);
+    if (__tc1.QueryValid() > 0)
+    {
+      __tc1.SetTitle("");
+      TestAddCondition(__tc1);
+      __tc1.Start(__cEmpty);
+    }
+    __ResetBusContext();
+
+
+  }
+  TestPreparationEnd();
+}
+
+
+void Tti3jk8hf_Tet_Tc0()
+{
+  CreateTTEIFFunction("Tti3jk8hf_Tc0", __eTcDef, __eLocal);  
+  CallInterfaceFunction("LightTest", __cEmpty , __cEmpty );
+}
+testcase Tti3jk8hf_Tc0()
+{	
+  SetBreakOnFail(1);
+
+  TestCommandBegin(__eSet, __cSet, "", __cEmpty);
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`Lights::`HazardLightsSwitch = 1;
+      __ReportTableRow(0, "System variable 'HazardLightsSwitch'", __cAOp, 1, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", __cEmpty);
+  {
+    __Wait("1", (100 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eCAPLInline, __cCAPLInline, "", __cEmpty);
+  {
+    __cii3jk8hfCaplInline0();
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", __cEmpty);
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`Lights::`HazardLightsSwitch = 0;
+      __ReportTableRow(0, "System variable 'HazardLightsSwitch'", __cAOp, 0, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", __cEmpty);
+  {
+    __Wait("1", (50 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void __cii3jk8hfCaplInline0 ()
+{
+  {
+if (testWaitForSignalMatch (FlashLight, 1, 200) == 1)
+    testStepPass("FlashLight", "FlashLight is turned on");
+  else
+    testStepFail("FlashLight", "The FlashLight could not be turned on");
+  }
+}
+
+void Tti3jk8hf_Tet_Tc1()
+{
+  CreateTTEIFFunction("Tti3jk8hf_Tc1", __eTcDef, __eLocal);  
+  CallInterfaceFunction("EngineTest", __cEmpty , __cEmpty );
+}
+testcase Tti3jk8hf_Tc1()
+{	
+  SetBreakOnFail(1);
+
+  TestCommandBegin(__eStimulateRamp, __cStimulateRamp, "", __cEmpty);
+  {
+    int64 __duration;
+    __duration = 4000;
+    if (__duration <= 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __duration / ((float)1000000 / 1000000.0), "ms");
+    }
+    else
+    {
+      dword __rampId;
+      ChkConfig_SetPrecision(3);
+      __rampId = StmCreate_Ramp(sysvarFloat::`Engine::`EngineSpeedEntry, 100, 3000, 150, 3000, 20);
+      if (__rampId > 0) StmControl_Start(__rampId, __duration);
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", __cEmpty);
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`Engine::`EngineStateSwitch = 1;
+      __ReportTableRow(0, "System variable 'EngineStateSwitch'", __cAOp, 1, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", __cEmpty);
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 4000 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`easy::dbNode::`Engine::`EngineState::`EngineSpeed);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "EngineSpeed");
+      __setFailed |= testJoinSignal(`easy::dbNode::`Engine::`EngineState::`EngineSpeed, "__cbi3jk8hfCallback0", __cArray, 0) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        {
+          int __res1,__res2;
+          __csr = CheckSignalMatch(`easy::dbNode::`Engine::`EngineState::`EngineSpeed, 3450, ">=") == 1;
+          __res1 = __csr;
+          __csr = CheckSignalMatch(`easy::dbNode::`Engine::`EngineState::`EngineSpeed, 3550, "<=") == 1;
+          __res2 = __csr;
+          __csr = __res1 && __res2;
+        
+          snprintf(__cArray, elCount(__cArray), "3450..3550");
+          __ReportTableRow(0, "CAN signal 'EngineSpeed'", __cRange, __cArray, __cEmpty);
+          __ReportCell(`easy::dbNode::`Engine::`EngineState::`EngineSpeed);
+          __ReportCellResult(__csr, __ePassFail);
+        }
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", __cEmpty);
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`Engine::`EngineStateSwitch = 1;
+      __ReportTableRow(0, "System variable 'EngineStateSwitch'", __cAOp, 1, "");
+    }
+    {
+      @sysvarFloat::`Engine::`EngineSpeedEntry = 0;
+      __ReportTableRow(0, "System variable 'EngineSpeedEntry'", __cAOp, 0, "");
+    }
+    {
+      $`easy::dbNode::`Engine::`EngineState::`EngineSpeed.phys = 0;
+      __ReportSignalSetLValue("CAN signal 'EngineSpeed'", `easy::dbNode::`Engine::`EngineState::`EngineSpeed, __cArray);
+      __ReportTableRow(0, __cArray, __cAOp, 0, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+}
+
+dword __cbi3jk8hfCallback0(signal * __cbParam)
+{
+
+  {
+    int __res1,__res2;
+    __csr = CheckSignalMatch(__cbParam, 3450, ">=") == 1;
+    __res1 = __csr;
+    __csr = CheckSignalMatch(__cbParam, 3550, "<=") == 1;
+    __res2 = __csr;
+    __csr = __res1 && __res2;
+  }
+  return __csr;
+}
+
+void Tti3jk8hf_Tet_Tc2()
+{
+  CreateTTEIFFunction("Tti3jk8hf_Tc2", __eTcDef, __eLocal);  
+  CallInterfaceFunction("DisplayTest", __cEmpty , __cEmpty );
+}
+testcase Tti3jk8hf_Tc2()
+{	
+  SetBreakOnFail(1);
+
+  TestCommandBegin(__eSet, __cSet, "", __cEmpty);
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      $`easy::dbNode::`Light::`LightState::`HeadLight.phys = 1;
+      __ReportSignalSetLValue("CAN signal 'HeadLight'", `easy::dbNode::`Light::`LightState::`HeadLight, __cArray);
+      __ReportTableRow(0, __cArray, __cAOp, 1, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", __cEmpty);
+  {
+    __Wait("1", (50 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", __cEmpty);
+  {
+  
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 2000 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      snprintf(__cArray, elCount(__cArray), "System variable '%s'", "LightDisplay");
+      __setFailed |= testJoinSignal(sysvarInt::`Lights::`LightDisplay, "__cbi3jk8hfCallback1", __cArray) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(sysvarInt::`Lights::`LightDisplay, 4, "==") == 1;
+        __ReportTableRow(0, "System variable 'LightDisplay'", "==", 4, "");
+        __ReportCell(@sysvarInt::`Lights::`LightDisplay);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", __cEmpty);
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      $`easy::dbNode::`Light::`LightState::`HeadLight.phys = 0;
+      __ReportSignalSetLValue("CAN signal 'HeadLight'", `easy::dbNode::`Light::`LightState::`HeadLight, __cArray);
+      __ReportTableRow(0, __cArray, __cAOp, 0, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", __cEmpty);
+  {
+    __Wait("1", (50 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+dword __cbi3jk8hfCallback1(sysvarInt * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, 4, "==") == 1;
+  return __csr;
+}
+
