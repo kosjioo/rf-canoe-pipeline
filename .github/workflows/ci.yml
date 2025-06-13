@@ -1,3 +1,66 @@
+# name: RF and CANoe CI with Self-Hosted Runner
+
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
+# jobs:
+#   test:
+#     runs-on: self-hosted  # 使用你的 JIAHUILI Runner
+
+#     steps:
+#     # 检出代码
+#     - name: Checkout code
+#       uses: actions/checkout@v3
+#       with:
+#         submodules: false  # 禁用子模块检查
+
+#     # 运行 Robot Framework 测试
+#     - name: Run Robot Framework tests
+#       run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
+#       shell: cmd
+      
+      
+#     - name: Run Robot Framework tests
+#       run: |
+#         set TIMESTAMP=%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%_%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
+#         set TIMESTAMP=%TIMESTAMP: =0%
+#         mkdir run_%TIMESTAMP%
+#         copy "C:\RfGithub\HLK.robot" run_%TIMESTAMP%
+#         cd run_%TIMESTAMP%
+#         robot HLK.robot > run.log 2>&1
+#         cd ..
+#         copy run_%TIMESTAMP%\output.xml .
+#         copy run_%TIMESTAMP%\log.html .
+#         copy run_%TIMESTAMP%\report.html .
+#       shell: cmd
+
+
+#     # 上传测试报告
+#  #   - name: Upload test results
+#   #    if: always()
+#   #    uses: actions/upload-artifact@v4
+#   #    with:
+#   #      name: test-results
+#    #     path: |
+#    #       "C:\RfGithub\output.xml"
+#    #       "C:\RfGithub\log.html"
+#    #       "C:\RfGithub\report.html"
+          
+#     - name: Upload test results
+#       if: always()
+#       uses: actions/upload-artifact@v4
+#       with:
+#         name: test-results
+#         path: |
+#           output.xml
+#           log.html
+#           report.html
+#           run_*/run.log
+
+
 name: RF and CANoe CI with Self-Hosted Runner
 
 on:
@@ -8,54 +71,36 @@ on:
 
 jobs:
   test:
-    runs-on: self-hosted  # 使用你的 JIAHUILI Runner
+    runs-on: self-hosted
 
     steps:
-    # 检出代码
     - name: Checkout code
       uses: actions/checkout@v3
-      with:
-        submodules: false  # 禁用子模块检查
 
-    # 运行 Robot Framework 测试
-    - name: Run Robot Framework tests
-      run: cmd.exe /c robot "C:\RfGithub\HLK.robot"
+    - name: Run Robot Framework tests with numeric timestamp folder
       shell: cmd
-      
-      
-    - name: Run Robot Framework tests
       run: |
-        set TIMESTAMP=%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%_%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%
-        set TIMESTAMP=%TIMESTAMP: =0%
+        rem 获取年月日，格式 YYYYMMDD
+        for /f "tokens=2 delims==." %%i in ('wmic os get LocalDateTime /value ^| find "="') do set dt=%%i
+        set YYYY=%dt:~0,4%
+        set MM=%dt:~4,2%
+        set DD=%dt:~6,2%
+        set HH=%dt:~8,2%
+        set Min=%dt:~10,2%
+        set Sec=%dt:~12,2%
+
+        set TIMESTAMP=%YYYY%%MM%%DD%_%HH%%Min%%Sec%
+
         mkdir run_%TIMESTAMP%
-        copy "C:\RfGithub\HLK.robot" run_%TIMESTAMP%
-        cd run_%TIMESTAMP%
-        robot HLK.robot > run.log 2>&1
-        cd ..
-        copy run_%TIMESTAMP%\output.xml .
-        copy run_%TIMESTAMP%\log.html .
-        copy run_%TIMESTAMP%\report.html .
-      shell: cmd
+        robot -d run_%TIMESTAMP% HLK.robot > run_%TIMESTAMP%\run.log 2>&1
 
-
-    # 上传测试报告
- #   - name: Upload test results
-  #    if: always()
-  #    uses: actions/upload-artifact@v4
-  #    with:
-  #      name: test-results
-   #     path: |
-   #       "C:\RfGithub\output.xml"
-   #       "C:\RfGithub\log.html"
-   #       "C:\RfGithub\report.html"
-          
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: |
-          output.xml
-          log.html
-          report.html
-          run.log
+          run_*/output.xml
+          run_*/log.html
+          run_*/report.html
+          run_*/run.log
