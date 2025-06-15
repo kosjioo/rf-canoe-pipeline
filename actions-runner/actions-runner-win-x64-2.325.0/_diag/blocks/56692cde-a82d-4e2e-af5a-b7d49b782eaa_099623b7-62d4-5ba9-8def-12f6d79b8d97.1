@@ -1,0 +1,149 @@
+﻿2025-06-15T06:52:55.7151549Z Current runner version: '2.325.0'
+2025-06-15T06:52:55.7157275Z Runner name: 'JIAHUILI'
+2025-06-15T06:52:55.7157817Z Machine name: 'JIAHUILI'
+2025-06-15T06:52:55.7160382Z ##[group]GITHUB_TOKEN Permissions
+2025-06-15T06:52:55.7161832Z Contents: read
+2025-06-15T06:52:55.7162138Z Metadata: read
+2025-06-15T06:52:55.7162391Z Packages: read
+2025-06-15T06:52:55.7162653Z ##[endgroup]
+2025-06-15T06:52:55.7164016Z Secret source: Actions
+2025-06-15T06:52:55.7164347Z Prepare workflow directory
+2025-06-15T06:52:55.7721536Z Prepare all required actions
+2025-06-15T06:52:55.7753724Z Getting action download info
+2025-06-15T06:52:56.8347027Z Download action repository 'actions/checkout@v4' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-06-15T06:53:01.7337419Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2025-06-15T06:53:04.7045494Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-06-15T06:53:09.2686752Z Complete job name: test
+2025-06-15T06:53:09.5710726Z ##[group]Run actions/checkout@v4
+2025-06-15T06:53:09.5711230Z with:
+2025-06-15T06:53:09.5711393Z   repository: kosjioo/rf-canoe-pipeline
+2025-06-15T06:53:09.5711733Z   token: ***
+2025-06-15T06:53:09.5711874Z   ssh-strict: true
+2025-06-15T06:53:09.5712012Z   ssh-user: git
+2025-06-15T06:53:09.5712159Z   persist-credentials: true
+2025-06-15T06:53:09.5712307Z   clean: true
+2025-06-15T06:53:09.5712459Z   sparse-checkout-cone-mode: true
+2025-06-15T06:53:09.5712631Z   fetch-depth: 1
+2025-06-15T06:53:09.5712774Z   fetch-tags: false
+2025-06-15T06:53:09.5712952Z   show-progress: true
+2025-06-15T06:53:09.5713098Z   lfs: false
+2025-06-15T06:53:09.5713225Z   submodules: false
+2025-06-15T06:53:09.5713376Z   set-safe-directory: true
+2025-06-15T06:53:09.5713657Z ##[endgroup]
+2025-06-15T06:53:10.4560747Z Syncing repository: kosjioo/rf-canoe-pipeline
+2025-06-15T06:53:10.4566227Z ##[group]Getting Git version info
+2025-06-15T06:53:10.4569537Z Working directory is 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+2025-06-15T06:53:10.4573784Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2025-06-15T06:53:10.7433784Z git version 2.48.1.windows.1
+2025-06-15T06:53:10.7511548Z ##[endgroup]
+2025-06-15T06:53:10.7570883Z Copying 'C:\Users\admin\.gitconfig' to 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\74670afe-939a-48f3-877c-fb53f15414c9\.gitconfig'
+2025-06-15T06:53:10.7593122Z Temporarily overriding HOME='C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\74670afe-939a-48f3-877c-fb53f15414c9' before making global git config changes
+2025-06-15T06:53:10.7602503Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-15T06:53:10.7613999Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline
+2025-06-15T06:53:11.0649968Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --get remote.origin.url
+2025-06-15T06:53:11.4057849Z https://github.com/kosjioo/rf-canoe-pipeline
+2025-06-15T06:53:11.4134906Z ##[group]Removing previously created refs, to avoid conflicts
+2025-06-15T06:53:11.4151725Z [command]"C:\Program Files\Git\cmd\git.exe" rev-parse --symbolic-full-name --verify --quiet HEAD
+2025-06-15T06:53:11.6854039Z HEAD
+2025-06-15T06:53:12.3551019Z ##[endgroup]
+2025-06-15T06:53:12.3552603Z [command]"C:\Program Files\Git\cmd\git.exe" submodule status
+2025-06-15T06:53:17.8397496Z ##[group]Cleaning the repository
+2025-06-15T06:53:17.8420290Z [command]"C:\Program Files\Git\cmd\git.exe" clean -ffdx
+2025-06-15T06:53:18.1988051Z Removing actions-runner/
+2025-06-15T06:53:18.2057536Z [command]"C:\Program Files\Git\cmd\git.exe" reset --hard HEAD
+2025-06-15T06:53:18.5270954Z HEAD is now at 19dea17 Create ci.yml
+2025-06-15T06:53:18.5335053Z ##[endgroup]
+2025-06-15T06:53:18.5353032Z ##[group]Disabling automatic garbage collection
+2025-06-15T06:53:18.5439533Z [command]"C:\Program Files\Git\cmd\git.exe" config --local gc.auto 0
+2025-06-15T06:53:18.8370659Z ##[endgroup]
+2025-06-15T06:53:18.8371226Z ##[group]Setting up auth
+2025-06-15T06:53:18.8404660Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-06-15T06:53:19.1227840Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-06-15T06:53:24.1722315Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-15T06:53:24.4523845Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-06-15T06:53:29.4431877Z [command]"C:\Program Files\Git\cmd\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2025-06-15T06:53:29.7790253Z ##[endgroup]
+2025-06-15T06:53:29.7791516Z ##[group]Fetching the repository
+2025-06-15T06:53:29.7840467Z [command]"C:\Program Files\Git\cmd\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b48727639810a40da481ed173ea70f40ac94664a:refs/remotes/origin/main
+2025-06-15T06:53:32.9990260Z From https://github.com/kosjioo/rf-canoe-pipeline
+2025-06-15T06:53:32.9991020Z  + 04cafbc...b487276 b48727639810a40da481ed173ea70f40ac94664a -> origin/main  (forced update)
+2025-06-15T06:53:33.1304176Z ##[endgroup]
+2025-06-15T06:53:33.1305636Z ##[group]Determining the checkout info
+2025-06-15T06:53:33.1307201Z ##[endgroup]
+2025-06-15T06:53:33.1324181Z [command]"C:\Program Files\Git\cmd\git.exe" sparse-checkout disable
+2025-06-15T06:53:33.4344960Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --unset-all extensions.worktreeConfig
+2025-06-15T06:53:33.6901184Z ##[group]Checking out the ref
+2025-06-15T06:53:33.6909132Z [command]"C:\Program Files\Git\cmd\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2025-06-15T06:53:33.9436287Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/blocks/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_1f200c08-568b-46b2-8f5b-8b65d2373f0e.1: Filename too long
+2025-06-15T06:53:33.9455195Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/blocks/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_43c5331a-3502-4413-ad72-8e2a2b73edf2.1: Filename too long
+2025-06-15T06:53:33.9460159Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/blocks/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_6ceb0e74-2ef8-4314-8480-e17d53ce0186.1: Filename too long
+2025-06-15T06:53:33.9468040Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/blocks/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_8a44574e-41fd-583b-8491-d956ef17f7f3.1: Filename too long
+2025-06-15T06:53:33.9475304Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/blocks/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_9d83a28b-d9dd-4574-9a7a-7b0288d4f12d.1: Filename too long
+2025-06-15T06:53:33.9482528Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/blocks/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_c433be93-5a18-4446-9186-f1c8a780e0dd.1: Filename too long
+2025-06-15T06:53:33.9491258Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_diag/pages/c7daa280-7bd3-4900-b5f5-ade2a92c5da1_8a44574e-41fd-583b-8491-d956ef17f7f3_1.log: Filename too long
+2025-06-15T06:53:33.9499544Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.github/workflows/codeql-analysis.yml: Filename too long
+2025-06-15T06:53:33.9510785Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.github/workflows/publish-immutable-actions.yml: Filename too long
+2025-06-15T06:53:33.9519014Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.github/workflows/update-main-version.yml: Filename too long
+2025-06-15T06:53:33.9523559Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.github/workflows/update-test-ubuntu-git.yml: Filename too long
+2025-06-15T06:53:33.9529260Z warning: unable to access 'actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@actions/.gitattributes': Filename too long
+2025-06-15T06:53:33.9535365Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@actions/core.dep.yml: Filename too long
+2025-06-15T06:53:33.9541982Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@actions/exec.dep.yml: Filename too long
+2025-06-15T06:53:33.9549563Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@actions/github.dep.yml: Filename too long
+2025-06-15T06:53:33.9557387Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@actions/http-client.dep.yml: Filename too long
+2025-06-15T06:53:33.9565027Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@actions/tool-cache.dep.yml: Filename too long
+2025-06-15T06:53:33.9572673Z warning: unable to access 'actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@fastify/.gitattributes': Filename too long
+2025-06-15T06:53:33.9575248Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@fastify/busboy.dep.yml: Filename too long
+2025-06-15T06:53:33.9578490Z warning: unable to access 'actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/.gitattributes': Filename too long
+2025-06-15T06:53:33.9582287Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/auth-token.dep.yml: Filename too long
+2025-06-15T06:53:33.9585076Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/core.dep.yml: Filename too long
+2025-06-15T06:53:33.9588453Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/endpoint.dep.yml: Filename too long
+2025-06-15T06:53:33.9594443Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/graphql.dep.yml: Filename too long
+2025-06-15T06:53:33.9602636Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/openapi-types-20.0.0.dep.yml: Filename too long
+2025-06-15T06:53:33.9610871Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/openapi-types-22.1.0.dep.yml: Filename too long
+2025-06-15T06:53:33.9618920Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/plugin-paginate-rest.dep.yml: Filename too long
+2025-06-15T06:53:33.9627366Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/plugin-rest-endpoint-methods.dep.yml: Filename too long
+2025-06-15T06:53:33.9634561Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/request-error.dep.yml: Filename too long
+2025-06-15T06:53:33.9640316Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/request.dep.yml: Filename too long
+2025-06-15T06:53:33.9643330Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/types-12.6.0.dep.yml: Filename too long
+2025-06-15T06:53:33.9649846Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/@octokit/types-13.4.1.dep.yml: Filename too long
+2025-06-15T06:53:33.9652601Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/before-after-hook.dep.yml: Filename too long
+2025-06-15T06:53:33.9655262Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/.licenses/npm/universal-user-agent.dep.yml: Filename too long
+2025-06-15T06:53:33.9657805Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/__test__/git-command-manager.test.ts: Filename too long
+2025-06-15T06:53:33.9660267Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/__test__/git-directory-helper.test.ts: Filename too long
+2025-06-15T06:53:33.9662802Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/__test__/verify-no-unstaged-changes.sh: Filename too long
+2025-06-15T06:53:33.9665365Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/__test__/verify-sparse-checkout-non-cone-mode.sh: Filename too long
+2025-06-15T06:53:33.9667901Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/__test__/verify-submodules-false.sh: Filename too long
+2025-06-15T06:53:33.9670425Z ##[error]error: unable to create file actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/checkout/v4/__test__/verify-submodules-recursive.sh: Filename too long
+2025-06-15T06:53:33.9760998Z ##[error]fatal: cannot create directory at 'actions-runner/actions-runner-win-x64-2.325.0/_work/_actions/actions/setup-python/v5/.github/ISSUE_TEMPLATE': Filename too long
+2025-06-15T06:53:33.9857228Z ##[error]The process 'C:\Program Files\Git\cmd\git.exe' failed with exit code 128
+2025-06-15T06:53:34.0291673Z ##[group]Run actions/upload-artifact@v4
+2025-06-15T06:53:34.0292128Z with:
+2025-06-15T06:53:34.0292344Z   name: test-results
+2025-06-15T06:53:34.0292758Z   path: 04_logs/output.xml
+04_logs/log.html
+04_logs/report.html  # 根据实际报告路径调整
+
+2025-06-15T06:53:34.0293194Z   if-no-files-found: warn
+2025-06-15T06:53:34.0293462Z   compression-level: 6
+2025-06-15T06:53:34.0293718Z   overwrite: false
+2025-06-15T06:53:34.0293968Z   include-hidden-files: false
+2025-06-15T06:53:34.0294235Z ##[endgroup]
+2025-06-15T06:53:35.3967307Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2025-06-15T06:53:35.3971329Z The least common ancestor is C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline\04_logs. This will be the root directory of the artifact
+2025-06-15T06:53:35.3982146Z ##[warning]No files were found with the provided path: 04_logs/output.xml
+04_logs/log.html
+04_logs/report.html  # 根据实际报告路径调整. No artifacts will be uploaded.
+2025-06-15T06:53:35.4375169Z Post job cleanup.
+2025-06-15T06:53:35.7990562Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2025-06-15T06:53:36.1060643Z git version 2.48.1.windows.1
+2025-06-15T06:53:36.1215183Z Copying 'C:\Users\admin\.gitconfig' to 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\855d2ede-7c47-4779-8e8d-e4aa669cae34\.gitconfig'
+2025-06-15T06:53:36.1295018Z Temporarily overriding HOME='C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\855d2ede-7c47-4779-8e8d-e4aa669cae34' before making global git config changes
+2025-06-15T06:53:36.1297300Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-15T06:53:36.1332056Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline
+2025-06-15T06:53:36.4875619Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-06-15T06:53:36.7724884Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-06-15T06:53:42.2649172Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-15T06:53:42.5785092Z http.https://github.com/.extraheader
+2025-06-15T06:53:42.5869812Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2025-06-15T06:53:42.9050935Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2025-06-15T06:53:48.4423155Z Cleaning up orphan processes

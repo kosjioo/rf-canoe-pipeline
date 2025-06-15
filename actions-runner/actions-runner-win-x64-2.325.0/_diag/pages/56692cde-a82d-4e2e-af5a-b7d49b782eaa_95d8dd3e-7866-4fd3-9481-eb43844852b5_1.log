@@ -1,0 +1,13 @@
+﻿2025-06-15T06:53:35.4375151Z Post job cleanup.
+2025-06-15T06:53:35.7990499Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2025-06-15T06:53:36.1060569Z git version 2.48.1.windows.1
+2025-06-15T06:53:36.1215044Z Copying 'C:\Users\admin\.gitconfig' to 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\855d2ede-7c47-4779-8e8d-e4aa669cae34\.gitconfig'
+2025-06-15T06:53:36.1294830Z Temporarily overriding HOME='C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\855d2ede-7c47-4779-8e8d-e4aa669cae34' before making global git config changes
+2025-06-15T06:53:36.1297272Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-15T06:53:36.1331479Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline
+2025-06-15T06:53:36.4875407Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2025-06-15T06:53:36.7724812Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2025-06-15T06:53:42.2649117Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-06-15T06:53:42.5785036Z http.https://github.com/.extraheader
+2025-06-15T06:53:42.5869762Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2025-06-15T06:53:42.9050828Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
