@@ -1,0 +1,657 @@
+[2025-06-15 06:37:17Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-15 06:37:17Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:17Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:17Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'Runner': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner'
+[2025-06-15 06:37:18Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-06-15 06:37:18Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-06-15 06:37:18Z INFO Listener] Version: 2.325.0
+[2025-06-15 06:37:18Z INFO Listener] Commit: 71ed7cd46223bd5d61633445946813012b502d54
+[2025-06-15 06:37:18Z INFO Listener] Culture: zh-CN
+[2025-06-15 06:37:18Z INFO Listener] UI Culture: zh-CN
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO Listener] Validating directory permissions for: 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO CommandLineParser] Parse
+[2025-06-15 06:37:18Z INFO CommandLineParser] Parsing 1 args
+[2025-06-15 06:37:18Z INFO CommandLineParser] parsing argument
+[2025-06-15 06:37:18Z INFO CommandLineParser] HasArgs: False
+[2025-06-15 06:37:18Z INFO CommandLineParser] Adding Command: run
+[2025-06-15 06:37:18Z INFO Listener] Arguments parsed
+[2025-06-15 06:37:18Z INFO Runner] ExecuteCommand
+[2025-06-15 06:37:18Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin\Runner.Listener.dll
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] binPath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] RootFolder: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'Runner': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] ConfigFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner_migrated'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner_migrated
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] CredFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_migrated'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_migrated
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'Service': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.service'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.service
+[2025-06-15 06:37:18Z INFO CommandSettings] Flag 'help': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Flag 'version': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Flag 'check': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Command 'configure': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Command 'remove': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-06-15 06:37:18Z INFO ConfigurationManager] LoadSettings
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsConfigured()
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-15 06:37:18Z INFO ConfigurationManager] Is configured: True
+[2025-06-15 06:37:18Z INFO ConfigurationStore] Read setting file: 397 chars
+[2025-06-15 06:37:18Z INFO ConfigurationManager] Settings Loaded
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-06-15 06:37:18Z INFO CommandSettings] Command 'run': 'True'
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsConfigured()
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsConfigured: True
+[2025-06-15 06:37:18Z INFO ConfigurationManager] Is configured: True
+[2025-06-15 06:37:18Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-06-15 06:37:18Z INFO Runner] Set runner startup type - Manual
+[2025-06-15 06:37:18Z INFO CommandSettings] Flag 'once': 'False'
+[2025-06-15 06:37:18Z INFO CommandSettings] Flag 'once': 'False'
+[2025-06-15 06:37:18Z INFO Runner] RunAsync
+[2025-06-15 06:37:18Z INFO ConfigurationManager] LoadMigratedSettings
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsMigratedConfigured()
+[2025-06-15 06:37:18Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2025-06-15 06:37:18Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2025-06-15 06:37:18Z INFO Runner] Falling back to original .runner settings
+[2025-06-15 06:37:18Z INFO Runner] Using BrokerMessageListener
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] Using provided settings
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] {
+  "AgentId": 2,
+  "AgentName": "JIAHUILI",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/",
+  "GitHubUrl": "https://github.com/kosjioo/rf-canoe-pipeline",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] Loading Credentials
+[2025-06-15 06:37:18Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:37:18Z INFO ConfigurationStore] stored True
+[2025-06-15 06:37:18Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:37:18Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:37:18Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:37:18Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:37:18Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams'
+[2025-06-15 06:37:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:37:18Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:37:18Z INFO ConfigurationStore] stored True
+[2025-06-15 06:37:18Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:37:18Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:37:18Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:37:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:37:18Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:37:18Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:37:18Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:37:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:37:18Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:37:18Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:37:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:37:18Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:37:18Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:37:18Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:37:19Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:37:19Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:37:19Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:37:19Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:37:19Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:37:19Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:37:20Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:20Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:22Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:37:22Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:37:22Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (2.3724278 seconds)
+[2025-06-15 06:37:22Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:37:22Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:37:22Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:37:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:23Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:37:23Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:37:23Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:37:23Z ERR  Terminal] WRITE ERROR: 2025-06-15 06:37:23Z: Runner connect error: Registration was not found or is not medium trust. ClientType: . Retrying until reconnected.
+[2025-06-15 06:37:23Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:37:53Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:37:53Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:37:53Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:37:53Z INFO ConfigurationStore] stored True
+[2025-06-15 06:37:53Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:37:53Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:37:53Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:37:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:53Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:37:53Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:37:53Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:37:53Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:37:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:37:53Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:37:53Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:37:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:37:53Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:37:53Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:37:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:37:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:37:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:37:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:37:55Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:37:55Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:37:55Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:37:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:57Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:37:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:37:57Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (2.1411378 seconds)
+[2025-06-15 06:37:57Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:37:57Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:37:57Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:37:57Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:37:59Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:37:59Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:37:59Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:37:59Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:38:29Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:38:29Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:38:29Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:38:29Z INFO ConfigurationStore] stored True
+[2025-06-15 06:38:29Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:38:29Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:38:29Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:38:29Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:38:29Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:38:29Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:38:29Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:38:29Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:38:29Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:38:29Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:38:29Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:38:29Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:38:29Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:38:29Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:38:29Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:38:30Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:38:31Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:38:31Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:38:31Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:38:31Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:38:31Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:38:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:38:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:38:32Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:38:32Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:38:32Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:38:32Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:38:32Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:38:32Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:38:35Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:38:35Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:38:35Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:38:35Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:39:05Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:39:05Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:39:05Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:39:05Z INFO ConfigurationStore] stored True
+[2025-06-15 06:39:05Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:39:05Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:39:05Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:39:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:05Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:39:05Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:39:05Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:39:05Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:39:05Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:39:05Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:39:05Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:39:05Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:39:05Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:39:05Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:39:05Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:39:05Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:39:06Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:39:06Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:39:06Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:39:06Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:39:06Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:39:06Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:06Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:07Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:39:07Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:39:07Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:39:07Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:39:07Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:39:07Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:09Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:39:09Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:39:09Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:39:09Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:39:39Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:39:39Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:39:39Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:39:39Z INFO ConfigurationStore] stored True
+[2025-06-15 06:39:39Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:39:39Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:39:39Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:39:39Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:39Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:39:39Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:39:39Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:39:39Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:39:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:39:39Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:39:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:39:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:39:39Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:39:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:39:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:39:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:39:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:39:42Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:39:42Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:39:42Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:39:42Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:39:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:43Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:39:43Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:39:43Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:39:43Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:39:43Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:39:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:39:44Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:39:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:39:44Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:39:44Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:40:14Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:40:14Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:40:14Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:40:14Z INFO ConfigurationStore] stored True
+[2025-06-15 06:40:14Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:40:14Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:40:14Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:40:14Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:14Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:40:14Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:40:14Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:40:14Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:40:14Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:40:14Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:40:14Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:40:14Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:40:14Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:40:14Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:40:14Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:40:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:40:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:40:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:40:15Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:40:15Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:40:15Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:40:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:18Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:40:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:40:18Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (2.4040602 seconds)
+[2025-06-15 06:40:18Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:40:18Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:40:18Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:40:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:21Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:40:21Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:40:21Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:40:21Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:40:51Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:40:51Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:40:51Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:40:51Z INFO ConfigurationStore] stored True
+[2025-06-15 06:40:51Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:40:51Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:40:51Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:40:51Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:51Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:40:51Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:40:51Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:40:51Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:40:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:40:51Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:40:51Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:40:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:40:51Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:40:51Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:40:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:40:52Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:40:53Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:40:53Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:40:53Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:40:53Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:40:53Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:40:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:54Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:40:54Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:40:54Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:40:54Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:40:54Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:40:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:40:55Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:40:55Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:40:55Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:40:55Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:41:25Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:41:25Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:41:25Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:41:25Z INFO ConfigurationStore] stored True
+[2025-06-15 06:41:25Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:41:25Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:41:25Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:41:25Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:41:25Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:41:25Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:41:25Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:41:25Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:41:25Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:41:25Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:41:25Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:41:25Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:41:25Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:41:25Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:41:25Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:41:26Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:41:26Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:41:28Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:41:28Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:41:28Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:41:28Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:41:28Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:41:28Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:41:29Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:41:29Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:41:29Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:41:29Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:41:29Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:41:29Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:41:31Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:41:31Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:41:31Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:41:31Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:42:01Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:42:01Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:42:01Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:42:01Z INFO ConfigurationStore] stored True
+[2025-06-15 06:42:01Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:42:01Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:42:01Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:42:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:01Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:42:01Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:42:01Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:42:01Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:42:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:42:01Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:42:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:42:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:42:01Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:42:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:42:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:42:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:42:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:42:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:42:03Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:42:03Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:42:03Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:42:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:04Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:42:04Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:42:04Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:42:04Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:42:04Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:42:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:08Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:42:08Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:42:08Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:42:08Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:42:38Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:42:38Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:42:38Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:42:38Z INFO ConfigurationStore] stored True
+[2025-06-15 06:42:38Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:42:38Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:42:38Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:42:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:38Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:42:38Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:42:38Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:42:38Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:42:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:42:38Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:42:38Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:42:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:42:38Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:42:38Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:42:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:42:39Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:42:39Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:42:39Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:42:39Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:42:39Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:42:39Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:42:39Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:39Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:41Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:42:41Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:42:41Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:42:41Z ERR  BrokerMessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: Registration was not found or is not medium trust. ClientType: 
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:42:41Z ERR  BrokerMessageListener] Test oauth app registration.
+[2025-06-15 06:42:41Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:42:42Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fa2ad2ed-c95f-4cff-ad29-9f18465105a9 failed. HTTP Status: BadRequest
+[2025-06-15 06:42:42Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:42:42Z INFO BrokerMessageListener] Retriable exception: Registration was not found or is not medium trust. ClientType: 
+[2025-06-15 06:42:42Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:43:12Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:43:12Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:43:12Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:43:12Z INFO ConfigurationStore] stored True
+[2025-06-15 06:43:12Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:43:12Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:43:12Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:43:12Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:43:12Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:43:12Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-06-15 06:43:12Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:43:12Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:43:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:43:12Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:43:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:43:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:43:12Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:43:12Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:43:12Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:43:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:43:13Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:43:33Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelinesghubeus11.actions.githubusercontent.com/qx2tsjZdthWDVXTqNh6igWNEaXJBpWaMF7DXWE19ZeKnp0ifqG/_apis/connectionData?connectOptions=0&lastChangeId=7073793&lastChangeId64=7073793 failed (Socket Error: TimedOut). The operation will be retried in 11.014 seconds.
+[2025-06-15 06:43:46Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:43:46Z INFO BrokerMessageListener] VssConnection created
+[2025-06-15 06:43:46Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:43:46Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:43:46Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:43:46Z ERR  BrokerMessageListener] GitHub.Services.WebApi.Jwt.InvalidCredentialsException: The signing token has no private key and cannot be used for signing.
+   at GitHub.Services.WebApi.Jwt.JsonWebTokenUtilities.ValidateSigningCredentials(VssSigningCredentials credentials, Boolean allowExpiredToken)
+   at GitHub.Services.WebApi.Jwt.JsonWebToken.GetHeader(VssSigningCredentials credentials, Boolean allowExpired)
+   at GitHub.Services.WebApi.Jwt.JsonWebToken.Create(String issuer, String audience, DateTime validFrom, DateTime validTo, DateTime issuedAt, IEnumerable`1 additionalClaims, JsonWebToken actor, String actorToken, VssSigningCredentials credentials, Boolean allowExpiredCertificate)
+   at GitHub.Services.WebApi.Jwt.JsonWebToken.Create(String issuer, String audience, DateTime validFrom, DateTime validTo, IEnumerable`1 additionalClaims, VssSigningCredentials credentials)
+   at GitHub.Services.OAuth.VssOAuthJwtBearerAssertion.GetBearerToken()
+   at GitHub.Services.OAuth.VssOAuthJwtBearerClientCredential.SetParameters(IDictionary`2 parameters)
+   at GitHub.Services.OAuth.VssOAuthClientCredential.GitHub.Services.OAuth.IVssOAuthTokenParameterProvider.SetParameters(IDictionary`2 parameters)
+   at GitHub.Services.OAuth.VssOAuthTokenHttpClient.CreateRequestContent(IVssOAuthTokenParameterProvider[] parameterProviders)
+   at GitHub.Services.OAuth.VssOAuthTokenHttpClient.GetTokenAsync(VssOAuthGrant grant, VssOAuthClientCredential credential, VssOAuthTokenParameters tokenParameters, CancellationToken cancellationToken)
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.CreateSessionAsync(TaskAgentSession session, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:43:46Z INFO BrokerMessageListener] Retriable exception: The signing token has no private key and cannot be used for signing.
+[2025-06-15 06:43:46Z INFO BrokerMessageListener] Sleeping for 30 seconds before retrying.
+[2025-06-15 06:44:16Z INFO BrokerMessageListener] Attempt to create session.
+[2025-06-15 06:44:16Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-06-15 06:44:16Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:44:16Z INFO ConfigurationStore] stored False
+[2025-06-15 06:44:16Z ERR  BrokerMessageListener] Catch exception during create session.
+[2025-06-15 06:44:16Z ERR  BrokerMessageListener] System.InvalidOperationException: Credentials not stored. Must reconfigure.
+   at GitHub.Runner.Listener.Configuration.CredentialManager.LoadCredentials(Boolean allowAuthUrlV2)
+   at GitHub.Runner.Listener.BrokerMessageListener.CreateSessionAsync(CancellationToken token)
+[2025-06-15 06:44:16Z INFO BrokerMessageListener] Non-retriable exception: Credentials not stored. Must reconfigure.
+[2025-06-15 06:44:16Z ERR  Terminal] WRITE ERROR: Failed to create session. Credentials not stored. Must reconfigure.
+[2025-06-15 06:44:16Z INFO Listener] Runner execution has finished with return code 1

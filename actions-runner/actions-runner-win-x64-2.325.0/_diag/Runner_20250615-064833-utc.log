@@ -1,0 +1,290 @@
+[2025-06-15 06:48:33Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'Runner': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner'
+[2025-06-15 06:48:33Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-06-15 06:48:33Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-06-15 06:48:33Z INFO Listener] Version: 2.325.0
+[2025-06-15 06:48:33Z INFO Listener] Commit: 71ed7cd46223bd5d61633445946813012b502d54
+[2025-06-15 06:48:33Z INFO Listener] Culture: zh-CN
+[2025-06-15 06:48:33Z INFO Listener] UI Culture: zh-CN
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO Listener] Validating directory permissions for: 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO CommandLineParser] Parse
+[2025-06-15 06:48:33Z INFO CommandLineParser] Parsing 1 args
+[2025-06-15 06:48:33Z INFO CommandLineParser] parsing argument
+[2025-06-15 06:48:33Z INFO CommandLineParser] HasArgs: False
+[2025-06-15 06:48:33Z INFO CommandLineParser] Adding Command: configure
+[2025-06-15 06:48:33Z INFO Listener] Arguments parsed
+[2025-06-15 06:48:33Z INFO Runner] ExecuteCommand
+[2025-06-15 06:48:33Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin\Runner.Listener.dll
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] binPath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] RootFolder: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'Runner': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] ConfigFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner_migrated'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.runner_migrated
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] CredFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_migrated'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_migrated
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:33Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:33Z INFO HostContext] Well known config file 'Service': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.service'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.service
+[2025-06-15 06:48:33Z INFO CommandSettings] Flag 'help': 'False'
+[2025-06-15 06:48:33Z INFO CommandSettings] Flag 'version': 'False'
+[2025-06-15 06:48:33Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-06-15 06:48:33Z INFO CommandSettings] Flag 'check': 'False'
+[2025-06-15 06:48:33Z INFO CommandSettings] Command 'configure': 'True'
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE: |                       
+[2025-06-15 06:48:33Z INFO Terminal] WRITE: Self-hosted runner registration
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE:                         |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-06-15 06:48:33Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-06-15 06:48:33Z INFO ConfigurationManager] ConfigureAsync
+[2025-06-15 06:48:33Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2025-06-15 06:48:33Z INFO ConfigurationStore] IsConfigured()
+[2025-06-15 06:48:33Z INFO ConfigurationStore] IsConfigured: False
+[2025-06-15 06:48:33Z INFO ConfigurationManager] Is configured: False
+[2025-06-15 06:48:33Z INFO CommandSettings] Arg 'url': ''
+[2025-06-15 06:48:33Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:33Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:33Z INFO Terminal] WRITE: What is the URL of your repository? 
+[2025-06-15 06:48:33Z INFO Terminal] READ LINE
+[2025-06-15 06:48:43Z INFO Terminal] Read value: ' https://github.com/kosjioo/rf-canoe-pipeline'
+[2025-06-15 06:48:43Z INFO CommandSettings] Arg 'token': ''
+[2025-06-15 06:48:43Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:43Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:43Z INFO Terminal] WRITE: What is your runner register token? 
+[2025-06-15 06:48:43Z INFO Terminal] READ SECRET
+[2025-06-15 06:48:48Z INFO Terminal] Read value: '***'
+[2025-06-15 06:48:50Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (9521:2A2406:FBA8A7:12FC982:684E6CCD)
+[2025-06-15 06:48:50Z INFO ConfigurationManager] Using V2 flow: False
+[2025-06-15 06:48:50Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2025-06-15 06:48:50Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:48:50Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:48:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:48:51Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:48:51Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:48:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:48:51Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:48:51Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:48:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:48:52Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:48:52Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:48:53Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:48:53Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:53Z INFO ConfigurationManager] Test Connection complete.
+[2025-06-15 06:48:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\bin'
+[2025-06-15 06:48:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0'
+[2025-06-15 06:48:53Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams'
+[2025-06-15 06:48:53Z INFO RSAEncryptedFileKeyManager] Creating new RSA key using 2048-bit key length
+[2025-06-15 06:48:53Z INFO RSAEncryptedFileKeyManager] Successfully saved RSA key parameters to file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:48:54Z INFO CommandSettings] Arg 'runnergroup': ''
+[2025-06-15 06:48:54Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:54Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:54Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2025-06-15 06:48:54Z INFO Terminal] WRITE: [press Enter for Default] 
+[2025-06-15 06:48:54Z INFO Terminal] READ LINE
+[2025-06-15 06:48:56Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:56Z INFO PromptManager] Falling back to the default: 'Default'
+[2025-06-15 06:48:56Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:56Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2025-06-15 06:48:56Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-06-15 06:48:56Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-06-15 06:48:56Z INFO CommandSettings] Arg 'name': ''
+[2025-06-15 06:48:56Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:56Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:56Z INFO Terminal] WRITE: Enter the name of runner: 
+[2025-06-15 06:48:56Z INFO Terminal] WRITE: [press Enter for JIAHUILI] 
+[2025-06-15 06:48:56Z INFO Terminal] READ LINE
+[2025-06-15 06:48:57Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:57Z INFO PromptManager] Falling back to the default: 'JIAHUILI'
+[2025-06-15 06:48:57Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:57Z INFO CommandSettings] Arg 'labels': ''
+[2025-06-15 06:48:57Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:57Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:57Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2025-06-15 06:48:57Z INFO Terminal] WRITE: [press Enter to skip] 
+[2025-06-15 06:48:57Z INFO Terminal] READ LINE
+[2025-06-15 06:48:57Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:57Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'replace': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: [press Enter for N] 
+[2025-06-15 06:48:58Z INFO Terminal] READ LINE
+[2025-06-15 06:48:58Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:58Z INFO PromptManager] Falling back to the default: 'N'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Arg 'name': ''
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: Enter the name of runner: 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: [press Enter for JIAHUILI] 
+[2025-06-15 06:48:58Z INFO Terminal] READ LINE
+[2025-06-15 06:48:58Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:58Z INFO PromptManager] Falling back to the default: 'JIAHUILI'
+[2025-06-15 06:48:58Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:58Z INFO CommandSettings] Arg 'labels': ''
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: [press Enter to skip] 
+[2025-06-15 06:48:58Z INFO Terminal] READ LINE
+[2025-06-15 06:48:58Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:58Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'replace': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: [press Enter for N] 
+[2025-06-15 06:48:58Z INFO Terminal] READ LINE
+[2025-06-15 06:48:58Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:58Z INFO PromptManager] Falling back to the default: 'N'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-06-15 06:48:58Z INFO CommandSettings] Arg 'name': ''
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: Enter the name of runner: 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: [press Enter for JIAHUILI] 
+[2025-06-15 06:48:58Z INFO Terminal] READ LINE
+[2025-06-15 06:48:58Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:58Z INFO PromptManager] Falling back to the default: 'JIAHUILI'
+[2025-06-15 06:48:58Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:58Z INFO CommandSettings] Arg 'labels': ''
+[2025-06-15 06:48:58Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:58Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2025-06-15 06:48:58Z INFO Terminal] WRITE: [press Enter to skip] 
+[2025-06-15 06:48:58Z INFO Terminal] READ LINE
+[2025-06-15 06:48:59Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:59Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:59Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'replace': 'False'
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:59Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: [press Enter for N] 
+[2025-06-15 06:48:59Z INFO Terminal] READ LINE
+[2025-06-15 06:48:59Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:59Z INFO PromptManager] Falling back to the default: 'N'
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-06-15 06:48:59Z INFO CommandSettings] Arg 'name': ''
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:59Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: Enter the name of runner: 
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: [press Enter for JIAHUILI] 
+[2025-06-15 06:48:59Z INFO Terminal] READ LINE
+[2025-06-15 06:48:59Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:59Z INFO PromptManager] Falling back to the default: 'JIAHUILI'
+[2025-06-15 06:48:59Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:59Z INFO CommandSettings] Arg 'labels': ''
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:59Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: [press Enter to skip] 
+[2025-06-15 06:48:59Z INFO Terminal] READ LINE
+[2025-06-15 06:48:59Z INFO Terminal] Read value: ''
+[2025-06-15 06:48:59Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:48:59Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'replace': 'False'
+[2025-06-15 06:48:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:48:59Z INFO PromptManager] ReadValue
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2025-06-15 06:48:59Z INFO Terminal] WRITE: [press Enter for N] 
+[2025-06-15 06:48:59Z INFO Terminal] READ LINE
+[2025-06-15 06:49:04Z INFO Terminal] Read value: 'Y'
+[2025-06-15 06:49:04Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-06-15 06:49:04Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2025-06-15 06:49:04Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2025-06-15 06:49:04Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2025-06-15 06:49:04Z INFO ConfigurationStore] Saving OAuth credential @ C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials
+[2025-06-15 06:49:04Z INFO ConfigurationStore] Credentials Saved.
+[2025-06-15 06:49:04Z INFO ConfigurationStore] HasCredentials()
+[2025-06-15 06:49:04Z INFO ConfigurationStore] stored True
+[2025-06-15 06:49:04Z INFO CredentialManager] GetCredentialProvider
+[2025-06-15 06:49:04Z INFO CredentialManager] Creating type OAuth
+[2025-06-15 06:49:04Z INFO CredentialManager] Creating credential type: OAuth
+[2025-06-15 06:49:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:49:04Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:49:04Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-06-15 06:49:04Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:49:04Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:49:04Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:49:04Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:49:04Z INFO RunnerServer] EstablishVssConnection
+[2025-06-15 06:49:04Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-06-15 06:49:04Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-06-15 06:49:05Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:49:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:49:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-06-15 06:49:07Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:49:07Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\.credentials_rsaparams
+[2025-06-15 06:49:08Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-06-15 06:49:09Z INFO ConfigurationManager] Service enforced serverUrlV2: https://broker.actions.githubusercontent.com/
+[2025-06-15 06:49:09Z INFO ConfigurationManager] Service enforced useV2Flow: True
+[2025-06-15 06:49:09Z INFO CommandSettings] Arg 'work': ''
+[2025-06-15 06:49:09Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:49:09Z INFO PromptManager] ReadValue
+[2025-06-15 06:49:09Z INFO Terminal] WRITE: Enter name of work folder: 
+[2025-06-15 06:49:09Z INFO Terminal] WRITE: [press Enter for _work] 
+[2025-06-15 06:49:09Z INFO Terminal] READ LINE
+[2025-06-15 06:49:13Z INFO Terminal] Read value: ''
+[2025-06-15 06:49:13Z INFO PromptManager] Falling back to the default: '_work'
+[2025-06-15 06:49:13Z INFO ConfigurationStore] Saving runner settings.
+[2025-06-15 06:49:13Z INFO ConfigurationStore] Settings Saved.
+[2025-06-15 06:49:13Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:49:13Z INFO Terminal] WRITE LINE: 
+[2025-06-15 06:49:13Z INFO CommandSettings] Flag 'runasservice': 'False'
+[2025-06-15 06:49:13Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-06-15 06:49:13Z INFO PromptManager] ReadValue
+[2025-06-15 06:49:13Z INFO Terminal] WRITE: Would you like to run the runner as service? (Y/N) 
+[2025-06-15 06:49:13Z INFO Terminal] WRITE: [press Enter for N] 
+[2025-06-15 06:49:13Z INFO Terminal] READ LINE
+[2025-06-15 06:49:18Z INFO Terminal] Read value: 'y'
+[2025-06-15 06:49:18Z INFO ConfigurationManager] Configuring to run the agent as service
+[2025-06-15 06:49:18Z ERR  WindowsServiceControlManager] Needs Administrator privileges for configure runner as windows service.
+[2025-06-15 06:49:18Z ERR  Runner] System.Security.SecurityException: Needs Administrator privileges for configuring runner as windows service.
+   at GitHub.Runner.Listener.Configuration.WindowsServiceControlManager.ConfigureService(RunnerSettings settings, CommandSettings command)
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.ConfigureAsync(CommandSettings command)
+   at GitHub.Runner.Listener.Runner.ExecuteCommand(CommandSettings command)
+[2025-06-15 06:49:18Z ERR  Terminal] WRITE ERROR: Needs Administrator privileges for configuring runner as windows service.
+[2025-06-15 06:49:18Z INFO Listener] Runner execution has finished with return code 1

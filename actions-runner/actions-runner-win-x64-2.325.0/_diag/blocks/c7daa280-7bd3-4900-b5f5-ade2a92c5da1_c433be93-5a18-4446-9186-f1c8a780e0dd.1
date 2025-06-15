@@ -1,0 +1,34 @@
+﻿2025-06-15T06:51:18.9531830Z ##[group]Run actions/checkout@v4
+2025-06-15T06:51:18.9534092Z with:
+2025-06-15T06:51:18.9534465Z   repository: kosjioo/rf-canoe-pipeline
+2025-06-15T06:51:18.9536081Z   token: ***
+2025-06-15T06:51:18.9536802Z   ssh-strict: true
+2025-06-15T06:51:18.9537753Z   ssh-user: git
+2025-06-15T06:51:18.9538548Z   persist-credentials: true
+2025-06-15T06:51:18.9539417Z   clean: true
+2025-06-15T06:51:18.9540168Z   sparse-checkout-cone-mode: true
+2025-06-15T06:51:18.9541068Z   fetch-depth: 1
+2025-06-15T06:51:18.9541764Z   fetch-tags: false
+2025-06-15T06:51:18.9542516Z   show-progress: true
+2025-06-15T06:51:18.9543251Z   lfs: false
+2025-06-15T06:51:18.9543868Z   submodules: false
+2025-06-15T06:51:18.9544153Z   set-safe-directory: true
+2025-06-15T06:51:18.9545122Z ##[endgroup]
+2025-06-15T06:51:22.8570943Z Syncing repository: kosjioo/rf-canoe-pipeline
+2025-06-15T06:51:22.8575663Z ##[group]Getting Git version info
+2025-06-15T06:51:22.8580068Z Working directory is 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+2025-06-15T06:51:22.8585729Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2025-06-15T06:51:23.2377427Z git version 2.48.1.windows.1
+2025-06-15T06:51:23.2421204Z ##[endgroup]
+2025-06-15T06:51:23.2435193Z Copying 'C:\Users\admin\.gitconfig' to 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\dd56cc31-43b7-48e1-829a-2c89f10fb08c\.gitconfig'
+2025-06-15T06:51:23.2469450Z Temporarily overriding HOME='C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\dd56cc31-43b7-48e1-829a-2c89f10fb08c' before making global git config changes
+2025-06-15T06:51:23.2470943Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-15T06:51:23.2486378Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline
+2025-06-15T06:51:23.5529678Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --get remote.origin.url
+2025-06-15T06:51:23.8868478Z https://github.com/kosjioo/rf-canoe-pipeline
+2025-06-15T06:51:23.8916321Z ##[group]Removing previously created refs, to avoid conflicts
+2025-06-15T06:51:23.8923083Z [command]"C:\Program Files\Git\cmd\git.exe" rev-parse --symbolic-full-name --verify --quiet HEAD
+2025-06-15T06:51:24.2084092Z HEAD
+2025-06-15T06:51:24.8675669Z ##[endgroup]
+2025-06-15T06:51:24.8676989Z [command]"C:\Program Files\Git\cmd\git.exe" submodule status
+2025-06-15T06:51:27.0099544Z ##[error]The operation was canceled.

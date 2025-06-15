@@ -1,0 +1,69 @@
+﻿2025-06-15T06:49:33.1268021Z Current runner version: '2.325.0'
+2025-06-15T06:49:33.1273779Z Runner name: 'JIAHUILI'
+2025-06-15T06:49:33.1274296Z Machine name: 'JIAHUILI'
+2025-06-15T06:49:33.1276946Z ##[group]GITHUB_TOKEN Permissions
+2025-06-15T06:49:33.1278383Z Contents: read
+2025-06-15T06:49:33.1278627Z Metadata: read
+2025-06-15T06:49:33.1278868Z Packages: read
+2025-06-15T06:49:33.1279113Z ##[endgroup]
+2025-06-15T06:49:33.1280423Z Secret source: Actions
+2025-06-15T06:49:33.1280739Z Prepare workflow directory
+2025-06-15T06:49:33.1646775Z Prepare all required actions
+2025-06-15T06:49:33.1676934Z Getting action download info
+2025-06-15T06:49:34.5145122Z Download action repository 'actions/checkout@v4' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2025-06-15T06:49:45.4090940Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2025-06-15T06:50:01.1855732Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-06-15T06:51:18.6292323Z Complete job name: test
+2025-06-15T06:51:18.9531959Z ##[group]Run actions/checkout@v4
+2025-06-15T06:51:18.9534117Z with:
+2025-06-15T06:51:18.9534494Z   repository: kosjioo/rf-canoe-pipeline
+2025-06-15T06:51:18.9536116Z   token: ***
+2025-06-15T06:51:18.9537016Z   ssh-strict: true
+2025-06-15T06:51:18.9537780Z   ssh-user: git
+2025-06-15T06:51:18.9538620Z   persist-credentials: true
+2025-06-15T06:51:18.9539441Z   clean: true
+2025-06-15T06:51:18.9540195Z   sparse-checkout-cone-mode: true
+2025-06-15T06:51:18.9541092Z   fetch-depth: 1
+2025-06-15T06:51:18.9541812Z   fetch-tags: false
+2025-06-15T06:51:18.9542541Z   show-progress: true
+2025-06-15T06:51:18.9543276Z   lfs: false
+2025-06-15T06:51:18.9543877Z   submodules: false
+2025-06-15T06:51:18.9544162Z   set-safe-directory: true
+2025-06-15T06:51:18.9545163Z ##[endgroup]
+2025-06-15T06:51:22.8571029Z Syncing repository: kosjioo/rf-canoe-pipeline
+2025-06-15T06:51:22.8575758Z ##[group]Getting Git version info
+2025-06-15T06:51:22.8580337Z Working directory is 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline'
+2025-06-15T06:51:22.8585806Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2025-06-15T06:51:23.2377485Z git version 2.48.1.windows.1
+2025-06-15T06:51:23.2421266Z ##[endgroup]
+2025-06-15T06:51:23.2435228Z Copying 'C:\Users\admin\.gitconfig' to 'C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\dd56cc31-43b7-48e1-829a-2c89f10fb08c\.gitconfig'
+2025-06-15T06:51:23.2469509Z Temporarily overriding HOME='C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\_temp\dd56cc31-43b7-48e1-829a-2c89f10fb08c' before making global git config changes
+2025-06-15T06:51:23.2470951Z Adding repository directory to the temporary git global config as a safe directory
+2025-06-15T06:51:23.2486534Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline
+2025-06-15T06:51:23.5529732Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --get remote.origin.url
+2025-06-15T06:51:23.8868568Z https://github.com/kosjioo/rf-canoe-pipeline
+2025-06-15T06:51:23.8916368Z ##[group]Removing previously created refs, to avoid conflicts
+2025-06-15T06:51:23.8923152Z [command]"C:\Program Files\Git\cmd\git.exe" rev-parse --symbolic-full-name --verify --quiet HEAD
+2025-06-15T06:51:24.2084191Z HEAD
+2025-06-15T06:51:24.8675717Z ##[endgroup]
+2025-06-15T06:51:24.8677007Z [command]"C:\Program Files\Git\cmd\git.exe" submodule status
+2025-06-15T06:51:27.0099572Z ##[error]The operation was canceled.
+2025-06-15T06:51:28.4502321Z ##[group]Run actions/upload-artifact@v4
+2025-06-15T06:51:28.4504350Z with:
+2025-06-15T06:51:28.4505129Z   name: test-results
+2025-06-15T06:51:28.4506338Z   path: 04_logs/output.xml
+04_logs/log.html
+04_logs/report.html  # 根据实际报告路径调整
+
+2025-06-15T06:51:28.4517477Z   if-no-files-found: warn
+2025-06-15T06:51:28.4518268Z   compression-level: 6
+2025-06-15T06:51:28.4518907Z   overwrite: false
+2025-06-15T06:51:28.4519999Z   include-hidden-files: false
+2025-06-15T06:51:28.4521116Z ##[endgroup]
+2025-06-15T06:51:31.5307705Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2025-06-15T06:51:31.5314521Z The least common ancestor is C:\Users\admin\Desktop\Home\24_Devops\07_CANoeRF_Frozen\actions-runner\actions-runner-win-x64-2.325.0\_work\rf-canoe-pipeline\rf-canoe-pipeline\04_logs. This will be the root directory of the artifact
+2025-06-15T06:51:31.5337678Z ##[warning]No files were found with the provided path: 04_logs/output.xml
+04_logs/log.html
+04_logs/report.html  # 根据实际报告路径调整. No artifacts will be uploaded.
+2025-06-15T06:51:32.5717454Z Post job cleanup.
+2025-06-15T06:51:34.2534625Z Cleaning up orphan processes
